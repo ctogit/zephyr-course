@@ -49,7 +49,7 @@ if LED_SUBSYSTEM
             help
                 Choose LED fade duratin time between 0 and 5000ms
             
-            menu "Expet settings"
+            menu "Expert settings"
                 visible if ADVANCED_LED_SETTINGS
 
                 config LED_DEBUG
