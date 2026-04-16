@@ -1,0 +1,14 @@
+/{ /* Raiz que luego se agrega al archivo general /build/zephyr/zephyr.dts */
+    aliases {
+        app-led = &poncholed;
+    };
+    luces: led {
+		compatible = "gpio-leds"; 
+		poncholed: green_led {
+            gpios = < &gpio0 21 GPIO_ACTIVE_HIGH >;  // LED en poncho
+			// gpios = < &gpio0 25 GPIO_ACTIVE_HIGH >;  // LED on board: decimal 25
+			label = "SPI_ERR_LED";               
+		};
+	};
+};
+	

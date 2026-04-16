@@ -1,67 +1,9 @@
-menuconfig LED_SUBSYSTEM
-    bool "LED Subsystem"
-    default y
-
-if LED_SUBSYSTEM
-    choice
-        prompt "LED blink sleep time"
-        default BLINK_SLEEP_TIME_1000MS
-        optional
-
-        config BLINK_SLEEP_TIME_2000MS
-            bool "2s (low)"
-        config BLINK_SLEEP_TIME_1000MS
-            bool "1s (medium)"
-        config BLINK_SLEEP_TIME_500MS
-            bool "500ms (high)"
-        config BLINK_SLEEP_TIME_250MS
-            bool "250ms (fast)"
-            
-    endchoice
-
-    config LED_BLINKING_SLEEP_TIME
-        int
-        default 2000 if BLINK_SLEEP_TIME_2000MS
-        default 1000 if BLINK_SLEEP_TIME_1000MS
-        default 500 if BLINK_SLEEP_TIME_500MS
-        default 250 if BLINK_SLEEP_TIME_250MS
-        default 0
-        help
-            While blinking, the time during LED is in off state
-    
-    menuconfig ADVANCED_LED_SETTINGS
-        bool "Advanced LED settings"
-        default n
-
-        if ADVANCED_LED_SETTINGS
-
-            config LED_BRIGHTNESS
-            int "LED Brightness"
-            range 0 100
-            default 100
-            help
-                Choose LED brightness between 0 and 100%
-
-            config LED_FADE_DURATION_MS
-            int "LED fade duration (ms)"
-            range 0 5000
-            default 500
-            help
-                Choose LED fade duratin time between 0 and 5000ms
-            
-            menu "Expert settings"
-                visible if ADVANCED_LED_SETTINGS
-
-                config LED_DEBUG
-                    bool "Enable LED debbugging"
-                    default n
-                config CUSTOM_BLINK_PATTERN
-                    bool "Custom LED pattern"
-                    default n
-            endmenu
-        endif
-endif 
-
+menuconfig APP_HEARTBEAT_PERIOD_MS
+    int "App heartbeat period ms"
+    range 100 2000
+    default 500
+    help
+        Choose LED period time on-off
 
 # Quedan replegadas todas las configuraciones de zepyr, mas prolijo
 menu "Zephyr system"

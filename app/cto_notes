@@ -1,0 +1,40 @@
+# Kconfig NOTES:
+west build app -t menuconfig
+# si usamos el arbol de configuración de Kconfig, guardamos pero después compilamos con pristine (-p)
+# se pierde la configuración.
+
+# Build and Flash notes:
+# agregar -p al final si se cambia de placa (o el nucleo), luego no porque no va a cargar el Kconfig
+
+# SAMV71 NOTES: programador EDGB no funca en wsl por lo que se debe flashear con openocd en win
+    west build app -b sam_v71_xult/samv71q21  # wsl
+    C:\zephyr-tools>.\flash_SAMV71_XULT.ps1 # esto en power-shell
+
+# NUCLEO NOTES:
+# en win hay que "attachear" el puerto usb donde se conecta la nucleo a WSL:
+    usbipd list # ver en qué BUSID aparece ST-Link debug
+    usbipd bind --busid n-n # ejemplo 3-9
+    usbipd attach --wsl --busid n-n # el mismo que arriba
+# en wsl si está attacheado:
+    lsusb # debería aparecer algo como STMicroelectronics STLINK-V3
+
+    west build app -b nucleo_h755zi_q/stm32h755xx/m4
+    west flash --runner openocd # se elige openocd solo porque no estaba instalado el programador de STM
+# para cambiar entre nucleos M4 y M7 hay que hacer un pristine antes (-p al final del comando)
+    west build app -b nucleo_h755zi_q/stm32h755xx/m7
+    west flash --runner openocd
+
+# RPI-PICO NOTES:
+    # sin probe debbugging, conectado directo al usb
+    west build app -b rpi_pico # wsl
+    C:\zephyr-tools>.\flash_RPI_PICO.ps1 # esto en power-shell
+
+# BLUE-PILL NOTES: se puede hacer todo desde wsl, pero a veces no flashea (sostener reset -> flash -> soltar reset -> flash)
+    # STLINK  - BLUE
+    # SWDIO - SWDIO
+    # GND   - GND
+    # SWCLK - SWCLK
+    # 3V3   - 3V3
+
+    west build app -b stm32_min_dev 
+    west flash
