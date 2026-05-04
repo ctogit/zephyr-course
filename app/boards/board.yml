@@ -1,0 +1,7 @@
+board:
+  name: cto_board_samv71
+  full_name: SAM V71(B) Xplained Ultra edited by CTo
+  vendor: cto
+  socs:
+    - name: samv71q21
+    - name: samv71q21b

@@ -1,30 +1,27 @@
-#include <zephyr/drivers/gpio.h>
+/*
+ * Iomico l4-task1: crear una carpeta "boards" dentro de la raiz 
+ * y copiar dentro de ella los archivos de la placa que se esté 
+ * usando.Hay que editar los nombres de los archivos y contenido
+ * según el nombre que le pongamos a la placa.
+ * Antes de compilar hay que poner este comando en CMakeLists.txt
+ * para no tener que decirle a zephyr dónde está la placa custom:
+ * list(APPEND BOARD_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
+ * west build app -b cto_board_samv71/samv71q21 -p
+ * En consola serie configurar según COM y 115200 baudios.
+ */
+
 #include <zephyr/kernel.h>
-#include <zephyr/logging/log.h>
+#include <stdio.h>
 
 #define SLEEP_TIME_MS 1000
 
-/* The devicetree node identifier for the "led0" alias. */
-#define LED_NODE DT_ALIAS(led0)
-
-static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED_NODE, gpios);
-
-LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
-
 int main(void)
 {
-    bool led_state = true;
-
-    if (!gpio_is_ready_dt(&led)) return 0;
-
-    if (gpio_pin_configure_dt(&led, GPIO_OUTPUT_ACTIVE) < 0) return 0;
-
-    while (1) {
-        if (gpio_pin_toggle_dt(&led) < 0) return 0;
-
-        led_state = !led_state;
-        LOG_INF("LED state: %s", led_state ? "ON" : "OFF");
+    while(1){
+        printf("Hello World! %s\n", CONFIG_BOARD_TARGET);
         k_msleep(SLEEP_TIME_MS);
     }
-    return 0;
+	
+
+	return 0;
 }
