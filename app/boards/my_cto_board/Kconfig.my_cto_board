@@ -1,0 +1,8 @@
+# Copyright (c) 2016 Piotr Mienkowski
+# Copyright (c) 2024 Gerson Fernando Budke <nandojve@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+# 2026: edited by CTo for iomico zephyr course
+
+config BOARD_MY_CTO_BOARD
+	select SOC_SAMV71Q21 if BOARD_MY_CTO_BOARD_SAMV71Q21
+	
