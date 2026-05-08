@@ -1,0 +1,11 @@
+description: Our supper driver
+
+compatible: "our,driver"
+
+include: base.yaml
+
+properties:
+  pins:
+    type: phandle-array
+    required: true
+    description: pin connected

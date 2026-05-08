@@ -1,38 +1,49 @@
 /*
- * Iomico l5-task1: crear una carpeta "boards" dentro de la raiz 
- * y copiar dentro de ella los archivos de la placa que se esté 
- * usando.Hay que editar los nombres de los archivos y contenido
- * según el nombre que le pongamos a la placa.
- * Antes de compilar hay que poner este comando en CMakeLists.txt
- * para no tener que decirle a zephyr dónde está la placa custom:
- * list(APPEND BOARD_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
- * west build app -b cto_board_samv71/samv71q21 -p
- * En consola serie configurar según COM y 115200 baudios.
- * 
- * Iomico l5-task2: dentro de boards se creó otra placa con los
- * archivos mínimos requeridos. En esta placa se pueden editar el 
- * .dts para eliminar nodos que no se usan. 
- * Para compilar:
- * west build app -b my_cto_board/samv71q21
- * 
- * Dentro de la carpeta my_cto_board se creó archivo board.c y 
- * CMakeLists.txt para probar de ejecutar código antes de que
- * inicie el main y se jugó con diferentes niveles de kernel
- * (ver board.c).
+ * Copyright (c) 2016 Intel Corporation
+ *
+ * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <zephyr/kernel.h>
 #include <stdio.h>
+#include <zephyr/kernel.h>
+#include <zephyr/drivers/gpio.h>
 
-#define SLEEP_TIME_MS 1000
+/* 1000 msec = 1 sec */
+#define SLEEP_TIME_MS   1000
+
+/* The devicetree node identifier for the "led0" alias. */
+#define LED0_NODE DT_ALIAS(ledso)
+
+/*
+ * A build error on this line means your board is unsupported.
+ * See the sample documentation for information on how to fix this.
+ */
+static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 
 int main(void)
 {
-    while(1){
-        printf("Hello World! %s\n", CONFIG_BOARD_TARGET);
-        k_msleep(SLEEP_TIME_MS);
-    }
-	
+	int ret;
+	bool led_state = true;
 
+	if (!gpio_is_ready_dt(&led)) {
+		return 0;
+	}
+
+	ret = our_driver_set_state(&led, GPIO_OUTPUT_ACTIVE);
+	if (ret < 0) {
+		return 0;
+	}
+
+	while (1) {
+        if
+		ret = gpio_pin_toggle_dt(&led);
+		if (ret < 0) {
+			return 0;
+		}
+
+		led_state = !led_state;
+		printf("LED state: %s\n", led_state ? "ON" : "OFF");
+		k_msleep(SLEEP_TIME_MS);
+	}
 	return 0;
 }
