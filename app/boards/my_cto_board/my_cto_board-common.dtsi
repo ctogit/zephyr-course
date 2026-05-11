@@ -37,7 +37,7 @@
 
 	our_driver: our_driver{
 		compatible="our,driver";
-		pins = <&pioa 23 GPIO_ACTIVE_LOW>;
+		pin-gpios = <&pioa 23 GPIO_ACTIVE_LOW>;
 	};
 
 	leds {

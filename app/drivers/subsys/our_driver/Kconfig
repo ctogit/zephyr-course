@@ -7,5 +7,6 @@ menuconfig OUR_DRIVER
 
 if OUR_DRIVER
 config OUR_DRIVER_INIT_STATE
-    bool "Start as high"
+    bool "Start as low"
     default n
+endif

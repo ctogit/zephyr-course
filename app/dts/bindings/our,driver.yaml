@@ -1,11 +1,11 @@
-description: Our supper driver
+description: Our super driver
 
 compatible: "our,driver"
 
 include: base.yaml
 
 properties:
-  pins:
+  pin-gpios:
     type: phandle-array
     required: true
     description: pin connected
