@@ -1,7 +1,7 @@
 #pragma once
 
 #include <zephyr/device.h>
-#include <zephyr/drivers/gpio.h>
+//#include <zephyr/drivers/gpio.h>
 #include <zephyr/toolchain.h>
 
 #ifdef __cplusplus

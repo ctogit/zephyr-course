@@ -1,10 +1,10 @@
-#define DT_DRV_COMPAT our_driver
-
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
 #include <zephyr/drivers/gpio.h>
 
 #include <our_driver.h>
+
+#define DT_DRV_COMPAT our_driver
 
 struct our_driver_config {
     struct gpio_dt_spec pin;
@@ -29,7 +29,10 @@ static int our_driver_set_state_impl(const struct device *dev, bool state)
 }
 
 /* CONECTAMOS API CON IMPLEMENTACIÓN */
-static DEVICE_API(our, our_driver_api) our_driver_api_funcs = {
+//static DEVICE_API(our, our_driver_api) our_driver_api_funcs = {
+//    .set_state = our_driver_set_state_impl,
+//};
+static const struct our_driver_api our_driver_api_funcs = {
     .set_state = our_driver_set_state_impl,
 };
 

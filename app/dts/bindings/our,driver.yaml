@@ -1,5 +1,6 @@
 description: Our super driver
 
+#compatible: "zephyr,our-driver"
 compatible: "our,driver"
 
 include: base.yaml

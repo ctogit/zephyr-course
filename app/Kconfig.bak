@@ -1,0 +1,1 @@
+source "$(APP_DIR)/drivers/subsys/our_driver/Kconfig"
