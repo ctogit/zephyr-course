@@ -11,3 +11,8 @@ config OUR_DRIVER_INIT_STATE
     bool "Start as low"
     default n
 endif
+
+# Quedan replegadas todas las configuraciones de zepyr, mas prolijo
+menu "Zephyr system"
+source "Kconfig.zephyr"    
+endmenu

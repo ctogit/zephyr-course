@@ -6,10 +6,9 @@
 
 
 #include <zephyr/kernel.h>
-//#include <zephyr/device.h>
-#include <our_driver.h>
+#include <zephyr/device.h>
+#include <zephyr/syscalls/our_driver.h>
 #include <stdio.h>
-
 
 
 /* 1000 msec = 1 sec */

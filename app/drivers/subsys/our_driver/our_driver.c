@@ -2,7 +2,7 @@
 #include <zephyr/device.h>
 #include <zephyr/drivers/gpio.h>
 
-#include <our_driver.h>
+#include <zephyr/syscalls/our_driver.h>
 
 #define DT_DRV_COMPAT our_driver
 

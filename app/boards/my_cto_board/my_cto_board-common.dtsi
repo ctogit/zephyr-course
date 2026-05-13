@@ -36,7 +36,7 @@
 	};
 
 	our_driver: our_driver {
-		compatible="our_driver";
+		compatible="our,driver";
 		pin-gpios = <&pioa 23 GPIO_ACTIVE_LOW>;
 		status = "okay";
 	};
