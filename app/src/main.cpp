@@ -7,7 +7,7 @@
 
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
-#include <zephyr/syscalls/our_driver.h>
+#include <our_driver.h>
 #include <stdio.h>
 
 

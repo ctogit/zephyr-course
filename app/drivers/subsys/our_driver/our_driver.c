@@ -1,10 +1,11 @@
+#define DT_DRV_COMPAT our_driver
+
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
 #include <zephyr/drivers/gpio.h>
+#include <zephyr/sys/util.h>
 
-#include <zephyr/syscalls/our_driver.h>
-
-#define DT_DRV_COMPAT our_driver
+#include <our_driver.h>
 
 struct our_driver_config {
     struct gpio_dt_spec pin;
@@ -43,7 +44,7 @@ static int our_driver_init(const struct device *dev)
         return -ENODEV;
     }
     gpio_pin_configure_dt(&config->pin, GPIO_OUTPUT_INACTIVE);
-    if(CONFIG_OUR_DRIVER_INIT_STATE) {
+    if (IS_ENABLED(CONFIG_OUR_DRIVER_INIT_STATE)) {
         our_driver_set_state(dev, false);
     }
     return 0;

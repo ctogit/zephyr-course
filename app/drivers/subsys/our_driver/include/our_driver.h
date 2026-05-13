@@ -21,7 +21,7 @@ __subsystem struct our_driver_api { // definición de mi api
 
 /* WRAPPER PÚBLICO*/
 static inline int our_driver_set_state(const struct device *dev, bool state){
-    return DEVICE_API_GET(our, dev)->set_state(dev);
+    return DEVICE_API_GET(our, dev)->set_state(dev, state);
 }
 
 //static inline our_driver_get_state(const struct device *dev){

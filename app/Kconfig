@@ -1,18 +1,5 @@
-menuconfig OUR_DRIVER
-    bool "Enable our driver"
-    default y
-    select GPIO
-    depends on DT_HAS_OUR_DRIVER_ENABLED
-    help
-        Our super dupper driver
-
-if OUR_DRIVER
-config OUR_DRIVER_INIT_STATE
-    bool "Start as low"
-    default n
-endif
-
 # Quedan replegadas todas las configuraciones de zepyr, mas prolijo
 menu "Zephyr system"
+source "$(APP_DIR)/drivers/subsys/our_driver/Kconfig"
 source "Kconfig.zephyr"    
 endmenu
