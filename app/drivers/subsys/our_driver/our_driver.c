@@ -30,9 +30,6 @@ static int our_driver_set_state_impl(const struct device *dev, bool state)
 }
 
 /* CONECTAMOS API CON IMPLEMENTACIÓN */
-//static DEVICE_API(our, our_driver_api) our_driver_api_funcs = {
-//    .set_state = our_driver_set_state_impl,
-//};
 static const struct our_driver_api our_driver_api_funcs = {
     .set_state = our_driver_set_state_impl,
 };

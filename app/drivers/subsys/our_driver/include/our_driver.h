@@ -15,9 +15,7 @@ __subsystem struct our_driver_api { // definición de mi api
     //int (*get_gpio)(const struct device *dev);
 };
 
-//static inline our_driver_get_gpio(const struct device *dev){
-//    return DEVICE_API_GET(our, dev)->get_gpio(dev);
-//}
+
 
 /* WRAPPER PÚBLICO*/
 static inline int our_driver_set_state(const struct device *dev, bool state){
@@ -26,6 +24,10 @@ static inline int our_driver_set_state(const struct device *dev, bool state){
 
 //static inline our_driver_get_state(const struct device *dev){
 //    return DEVICE_API_GET(our, dev)->get_state(dev);
+//}
+
+//static inline our_driver_get_gpio(const struct device *dev){
+//    return DEVICE_API_GET(our, dev)->get_gpio(dev);
 //}
 
 #ifdef __cplusplus
