@@ -1,13 +1,13 @@
-menuconfig OUR_DRIVER
-    bool "Enable our driver"
+menuconfig OUR_SENSOR
+    bool "Enable our sensor"
     default y
     select GPIO
-    depends on DT_HAS_OUR_DRIVER_ENABLED
+    depends on DT_HAS_OUR_SENSOR_ENABLED
     help
         Our super dupper driver
 
-if OUR_DRIVER
-config OUR_DRIVER_INIT_STATE
+if OUR_SENSOR
+config OUR_SENSOR_INIT_STATE
     bool "Start as low"
     default n
 endif

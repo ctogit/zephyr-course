@@ -16,7 +16,6 @@
 		i2c-0 = &twihs0;
 		i2c-1 = &twihs2;
 		led0 = &yellow_led1;
-		ledso = &our_driver;
 		pwm-led0 = &pwm_led0;
 		pwm-0 = &pwm0;
 		rtc = &rtc;
@@ -35,8 +34,8 @@
 		zephyr,canbus = &can1;
 	};
 
-	our_driver: our_driver {
-		compatible="our,driver";
+	our_sensor: our_sensor {
+		compatible="our,sensor";
 		pin-gpios = <&pioa 23 GPIO_ACTIVE_LOW>;
 		status = "okay";
 	};
