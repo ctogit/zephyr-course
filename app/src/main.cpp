@@ -11,7 +11,8 @@
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   250
 
-const struct device *dev = DEVICE_DT_GET_ANY(our_sensor); //En el .dtsi está el nodo our,sensor y en C es our_sensor.
+//En el .dtsi está el nodo our,sensor y en C es our_sensor.
+const struct device *dev = DEVICE_DT_GET_ANY(our_sensor); 
 
 int main(void)
 {
@@ -22,8 +23,12 @@ int main(void)
 	}
 
 	while (1) {
-		sensor_sample_fetch(dev); //tomo la muestra! (en este ejemplo hace el cambio de estado del led)
-		sensor_channel_get(dev, SENSOR_CHAN_ALL, &valor_recibido); //paso la dir de memoria para que el driver escriba el valor_recibido
+		//tomo la muestra! (en este ejemplo hace el cambio de estado del led)
+		sensor_sample_fetch(dev); 
+		
+		//paso la dir de memoria para que el driver escriba el valor_recibido
+		sensor_channel_get(dev, SENSOR_CHAN_ALL, &valor_recibido); 
+		
 		printf("PIN state: %s\n", valor_recibido.val1 ? "ON" : "OFF");
 
 		k_msleep(SLEEP_TIME_MS);

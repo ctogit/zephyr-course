@@ -7,6 +7,25 @@
 
 #include <zephyr/drivers/sensor.h>
 
+/* API PARA EXTENDER SENSOR */
+static const struct our_sensor_api our_sensor_api_funcs = {
+    .set_mode = our_sensor_set_mode_impl,
+};
+
+/* IMPLEMENTACIÓN DE MI CALLBACK */
+static int our_sensor_set_mode_impl(const struct device *dev, bool mode)
+{
+    const struct our_sensor_config *config = dev->config;
+    struct our_sensor_data *data = dev->data;
+
+    int ret = gpio_pin_set_dt(&config->pin, mode);
+    if (ret < 0)
+        return ret;
+ 
+    data->state = state;
+    return 0;
+}
+
 struct our_sensor_config {
     struct gpio_dt_spec pin;
 };
