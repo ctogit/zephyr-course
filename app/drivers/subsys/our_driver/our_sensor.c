@@ -6,32 +6,31 @@
 #include <zephyr/sys/util.h>
 
 #include <zephyr/drivers/sensor.h>
+#include <our_sensor.h>
 
-/* API PARA EXTENDER SENSOR */
-static const struct our_sensor_api our_sensor_api_funcs = {
-    .set_mode = our_sensor_set_mode_impl,
-};
-
-/* IMPLEMENTACIÓN DE MI CALLBACK */
-static int our_sensor_set_mode_impl(const struct device *dev, bool mode)
-{
-    const struct our_sensor_config *config = dev->config;
-    struct our_sensor_data *data = dev->data;
-
-    int ret = gpio_pin_set_dt(&config->pin, mode);
-    if (ret < 0)
-        return ret;
- 
-    data->state = state;
-    return 0;
-}
-
+/* ESTRUCTURA DE CONFIGURACIÓN */
 struct our_sensor_config {
     struct gpio_dt_spec pin;
 };
 
+/* ESTRUCTURA DE DATOS QUE VARÍAN EN TIEMPO DE EJECUCIÓN */
 struct our_sensor_data {
     bool state;
+    bool blink;
+};
+
+/* IMPLEMENTACIÓN DE MI CALLBACK */
+static int our_sensor_set_blink_impl(const struct device *dev, bool enable)
+{
+    struct our_sensor_data *data = dev->data;
+ 
+    data->blink = enable;
+    return 0;
+}
+
+/* API PARA EXTENDER SENSOR */
+static const struct our_sensor_driver_api our_sensor_api_funcs = {
+    .set_blink = our_sensor_set_blink_impl,
 };
 
 /* MIS IMPLEMENTACIONES PRIVADAS DEL SENSOR "LED" */
@@ -40,11 +39,17 @@ static int our_sensor_sample_fetch(const struct device *dev, enum sensor_channel
     const struct our_sensor_config *config = dev->config;
     struct our_sensor_data *data = dev->data;
 
-    data->state = !data->state;
-    int ret = gpio_pin_set_dt(&config->pin, data->state);
-    if (ret < 0)
-        return ret;
-
+    if (data->blink){
+        data->state = !data->state;
+        int ret = gpio_pin_set_dt(&config->pin, data->state);
+        if (ret < 0)
+            return ret;
+    }
+    if (!data->blink){
+        int ret = gpio_pin_set_dt(&config->pin, false);
+        if (ret < 0)
+            return ret;
+    }
     return 0;
 }
 
@@ -98,6 +103,6 @@ static int our_sensor_init(const struct device *dev)
                         &config_##inst,                 \
                         POST_KERNEL,                    \
                         CONFIG_APPLICATION_INIT_PRIORITY,\
-                        &our_sensor_api);         
+                        &our_sensor_api_funcs);         
 
 DT_INST_FOREACH_STATUS_OKAY(OUR_SENSOR_DEFINE)

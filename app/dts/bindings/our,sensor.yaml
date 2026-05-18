@@ -1,4 +1,4 @@
-description: Our super driver
+description: Our super driver extension
 
 #compatible: "zephyr,our-driver"
 compatible: "our,sensor"
