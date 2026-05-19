@@ -9,7 +9,9 @@ extern "C" {
 #endif
 
 /* API DEL DRIVER*/
-__subsystem struct our_sensor_driver_api { // definición de mi api
+__subsystem struct our_sensor_driver_api {
+    struct sensor_driver_api sensor_api;
+
     int (*set_blink)(const struct device *dev, bool enable);
 };
 

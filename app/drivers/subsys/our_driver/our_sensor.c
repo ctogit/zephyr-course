@@ -19,6 +19,26 @@ struct our_sensor_data {
     bool blink;
 };
 
+/* PROTOTYPES */
+static int our_sensor_sample_fetch(const struct device *dev,
+                                   enum sensor_channel chan);
+
+static int our_sensor_channel_get(const struct device *dev,
+                                  enum sensor_channel chan,
+                                  struct sensor_value *val);
+
+static int our_sensor_set_blink_impl(const struct device *dev,
+                                     bool enable);
+
+static const struct our_sensor_driver_api our_sensor_api_funcs = {
+    .sensor_api = {
+        .sample_fetch = our_sensor_sample_fetch,
+        .channel_get = our_sensor_channel_get,
+    },
+    // aquí se extiende la funcionalidad de la api sensor (fetch + get)
+    .set_blink = our_sensor_set_blink_impl, 
+};
+
 /* IMPLEMENTACIÓN DE MI CALLBACK */
 static int our_sensor_set_blink_impl(const struct device *dev, bool enable)
 {
@@ -28,24 +48,19 @@ static int our_sensor_set_blink_impl(const struct device *dev, bool enable)
     return 0;
 }
 
-/* API PARA EXTENDER SENSOR */
-static const struct our_sensor_driver_api our_sensor_api_funcs = {
-    .set_blink = our_sensor_set_blink_impl,
-};
-
 /* MIS IMPLEMENTACIONES PRIVADAS DEL SENSOR "LED" */
 static int our_sensor_sample_fetch(const struct device *dev, enum sensor_channel chan)
 {
     const struct our_sensor_config *config = dev->config;
     struct our_sensor_data *data = dev->data;
 
-    if (data->blink){
+    if (data->blink) {
         data->state = !data->state;
         int ret = gpio_pin_set_dt(&config->pin, data->state);
         if (ret < 0)
             return ret;
     }
-    if (!data->blink){
+    else if (!data->blink) {
         int ret = gpio_pin_set_dt(&config->pin, false);
         if (ret < 0)
             return ret;
@@ -62,12 +77,6 @@ static int our_sensor_channel_get(const struct device *dev, enum sensor_channel 
 
     return 0;
 }
-
-/* CONECTAMOS API CON IMPLEMENTACIÓN */
-static DEVICE_API(sensor, our_sensor_api) = {
-    .sample_fetch = our_sensor_sample_fetch,
-    .channel_get = our_sensor_channel_get,
-};
 
 static int our_sensor_init(const struct device *dev)
 {  
