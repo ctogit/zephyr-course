@@ -10,7 +10,7 @@ static int board_my_cto_board_init(void)
     k_msleep(SLEEP_TIME_MS);
     printf("INITIALIZING MY_CTO_BOARD...\n");
     k_msleep(SLEEP_TIME_MS);
-    printf("iomico zephyr course - lesson 5 (board definition)\n");
+    printf("iomico zephyr course - lesson 7 (Shell integration)\n");
     k_msleep(SLEEP_TIME_MS);
 
     return 0;
