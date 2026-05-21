@@ -18,47 +18,43 @@
 //En el .dtsi está el nodo our,sensor y en C es our_sensor.
 const struct device *dev = DEVICE_DT_GET_ANY(our_sensor); 
 
-static int cmd_demo_salute(const struct shell *sh, size_t argc, char **argv) {
+static int cmd_sensor(const struct shell *sh, size_t argc, char **argv) {
 	ARG_UNUSED(argc);
 	ARG_UNUSED(argv);
 	shell_print(sh, "Hello from shell");
 	return 0;
 }
 
-static int hi_subcmd(const struct shell *sh, size_t argc, char **argv) {
+static int fetch_subcmd(const struct shell *sh, size_t argc, char **argv) {
 	ARG_UNUSED(argc);
 	ARG_UNUSED(argv);
-	shell_print(sh, "Hi there");
+	sensor_sample_fetch(dev);
+	shell_print(sh, "Sensor sample fetch command");
 	return 0;
 }
 
-static int bu_subcmd(const struct shell *sh, size_t argc, char **argv) {
+static int read_subcmd(const struct shell *sh, size_t argc, char **argv) {
+	struct sensor_value valor_recibido;
 	ARG_UNUSED(argc);
 	ARG_UNUSED(argv);
-	shell_print(sh, "Buenas pibe");
+	sensor_channel_get(dev, SENSOR_CHAN_ALL, &valor_recibido); 
+		
+	//printf("PIN status: %s\n", valor_recibido.val1 ? "OFF" : "ON");
+	shell_fprintf(sh, SHELL_INFO, "Valor: %s\n", valor_recibido.val1);
 	return 0;
 }
 
-static int noblink_subcmd(const struct shell *sh, size_t argc, char **argv) {
+static int info_subcmd(const struct shell *sh, size_t argc, char **argv) {
 	ARG_UNUSED(argc);
 	ARG_UNUSED(argv);
-	shell_print(sh, "Parpadeo LED -> OFF");
-	our_sensor_set_blink(dev, false);
-	return 0;
-}
-
-static int blink_subcmd(const struct shell *sh, size_t argc, char **argv) {
-	ARG_UNUSED(argc);
-	ARG_UNUSED(argv);
-	shell_print(sh, "Parpadeo LED ->  ON");
-	our_sensor_set_blink(dev, true);
+	shell_print(sh, "Sensor LED commands");
 	return 0;
 }
 
 int main(void)
 {
-	struct sensor_value valor_recibido;
-	int counter = 0;
+	
+	//int counter = 0;
 
 	if (!device_is_ready(dev)) {
 		return 0;
@@ -76,27 +72,26 @@ int main(void)
 		}*/
 			
 		//tomo la muestra! (en este ejemplo hace el cambio de estado del led)
-		sensor_sample_fetch(dev); 
+		//sensor_sample_fetch(dev); 
 		
 		//paso la dir de memoria para que el driver escriba el valor_recibido
-		sensor_channel_get(dev, SENSOR_CHAN_ALL, &valor_recibido); 
+		//sensor_channel_get(dev, SENSOR_CHAN_ALL, &valor_recibido); 
 		
 		//printf("PIN status: %s\n", valor_recibido.val1 ? "OFF" : "ON");
 
 		k_msleep(SLEEP_TIME_MS);
 
-		counter++;
+		//counter++;
 	}
 	return 0;
 }
 
 SHELL_STATIC_SUBCMD_SET_CREATE(
 	sub_commands,
-	SHELL_CMD(hi, NULL, "Gringou salute", hi_subcmd),
-	SHELL_CMD(buenas, NULL, "Saludo argento", bu_subcmd),
-	SHELL_CMD(noblink, NULL, "Parpadeo LED off", noblink_subcmd),
-	SHELL_CMD(blink, NULL, "Parpadeo LED on", blink_subcmd),
+	SHELL_CMD(info, NULL, "Device name and ready state", info_subcmd),
+	SHELL_CMD(fetch, NULL, "Sensor sample fetch: led", fetch_subcmd),
+	SHELL_CMD(read, NULL, "Sensor channel get: led state", read_subcmd),
 	SHELL_SUBCMD_SET_END
 );
 
-SHELL_CMD_REGISTER(demo, &sub_commands, "Hello message", cmd_demo_salute);
+SHELL_CMD_REGISTER(sensor, &sub_commands, "Sensor root shell", cmd_sensor);
