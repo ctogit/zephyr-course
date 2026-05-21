@@ -1,9 +1,11 @@
 /*
- * l7-task1: sobre la api sensor (sample_fetch y channel_get) se integra 
- * SHELL y se crea comando raiz sensor y los siguientes subcomandos:
- * - leer: imprime información de la placa, driver y estado.
- * - fetch: muestrear el sensor (toggle led) - API SENSOR.
- * - read: leer la muestra - API SENSOR.
+ * l7-task2: se usa shell para habilitar/desabilitar el sample_fetch (toggle led)
+ * con la api our_sensor (que extiende a api sensor oficial de zephyr). Se validan
+ * argumentos del sub-comando blink para que solo se ingresen los valores y cantidades
+ * correctas.
+ * SENSOR
+ * 		|_INFO
+ * 		|_BLINK -> (ON/OFF) (50-1000)
  */
 
 #include <zephyr/kernel.h>
@@ -13,12 +15,13 @@
 #include <stdio.h>
 #include <zephyr/shell/shell.h>
 
-/* 1000 msec = 1 sec */
-#define SLEEP_TIME_MS   100
+/* Variable global para compartir con el thread del shell y del main */
+static int sleep_time_ms = 500;
 
 //En el .dtsi está el nodo our,sensor y en C es our_sensor.
 const struct device *dev = DEVICE_DT_GET_ANY(our_sensor); 
 
+/* COMANDO RAIZ */
 static int cmd_sensor(const struct shell *sh, size_t argc, char **argv) {
 	ARG_UNUSED(argc);
 	ARG_UNUSED(argv);
@@ -26,21 +29,32 @@ static int cmd_sensor(const struct shell *sh, size_t argc, char **argv) {
 	return 0;
 }
 
-static int fetch_subcmd(const struct shell *sh, size_t argc, char **argv) {
+static int blink_subcmd(const struct shell *sh, size_t argc, char **argv) {
 	ARG_UNUSED(argc);
-	ARG_UNUSED(argv);
-	sensor_sample_fetch(dev);
-	shell_print(sh, "Sensor sample fetch command");
-	return 0;
-}
 
-static int read_subcmd(const struct shell *sh, size_t argc, char **argv) {
-	struct sensor_value valor_recibido;
-	ARG_UNUSED(argc);
-	ARG_UNUSED(argv);
-
-	sensor_channel_get(dev, SENSOR_CHAN_ALL, &valor_recibido); 	
-	shell_fprintf(sh, SHELL_INFO, "Valor: %s\n", valor_recibido.val1 ? "ON" : "OFF");
+	bool enable;
+	int value = atoi(argv[2]);
+	// Validamos argumentos: argv[0]: blink (fijo); argv[1]: on/off (variable);
+	// argv[2]: ms
+	if (value < 50 || value > 1000) {
+		shell_error(sh, "Range: 50-1000 ms");
+		return -EINVAL;
+	}
+	
+	if(!strcmp(argv[1], "on")) {
+		enable = true;
+	}
+	else if(!strcmp(argv[1], "off")) {
+		enable = false;
+	}
+	else {
+		shell_error(sh, "Invalid argument, use on/off");
+		return -EINVAL;
+	}
+	
+	sleep_time_ms = value;
+	our_sensor_set_blink(dev, enable); 	
+	shell_fprintf(sh, SHELL_INFO, "Blink: %s\n", enable ? "ON" : "OFF");
 	return 0;
 }
 
@@ -61,9 +75,8 @@ int main(void)
 	}
 
 	while (1) {
-
-		k_msleep(SLEEP_TIME_MS);
-
+		sensor_sample_fetch(dev);
+		k_msleep(sleep_time_ms);
 	}
 	return 0;
 }
@@ -71,8 +84,7 @@ int main(void)
 SHELL_STATIC_SUBCMD_SET_CREATE(
 	sub_commands,
 	SHELL_CMD(info, NULL, "Print board, device name and ready state", info_subcmd),
-	SHELL_CMD(fetch, NULL, "Sensor sample fetch: led", fetch_subcmd),
-	SHELL_CMD(read, NULL, "Sensor channel get: led state", read_subcmd),
+	SHELL_CMD_ARG(blink, NULL, "Enable/disable blink", blink_subcmd, 3, 0),
 	SHELL_SUBCMD_SET_END
 );
 
