@@ -1,8 +1,9 @@
 /*
- * l7: sobre la api sensor (sample_fetch y channel_get) extiendida con 
- * una implemetación propia (set_blink) se integra SHELL y se usa esa 
- * implementación propia para habilitar o deshabilitar el parpadeo del 
- * LED desde consola serie.
+ * l7-task1: sobre la api sensor (sample_fetch y channel_get) se integra 
+ * SHELL y se crea comando raiz sensor y los siguientes subcomandos:
+ * - leer: imprime información de la placa, driver y estado.
+ * - fetch: muestrear el sensor (toggle led) - API SENSOR.
+ * - read: leer la muestra - API SENSOR.
  */
 
 #include <zephyr/kernel.h>
@@ -37,58 +38,39 @@ static int read_subcmd(const struct shell *sh, size_t argc, char **argv) {
 	struct sensor_value valor_recibido;
 	ARG_UNUSED(argc);
 	ARG_UNUSED(argv);
-	sensor_channel_get(dev, SENSOR_CHAN_ALL, &valor_recibido); 
-		
-	//printf("PIN status: %s\n", valor_recibido.val1 ? "OFF" : "ON");
-	shell_fprintf(sh, SHELL_INFO, "Valor: %s\n", valor_recibido.val1);
+
+	sensor_channel_get(dev, SENSOR_CHAN_ALL, &valor_recibido); 	
+	shell_fprintf(sh, SHELL_INFO, "Valor: %s\n", valor_recibido.val1 ? "ON" : "OFF");
 	return 0;
 }
 
 static int info_subcmd(const struct shell *sh, size_t argc, char **argv) {
 	ARG_UNUSED(argc);
 	ARG_UNUSED(argv);
-	shell_print(sh, "Sensor LED commands");
+	bool status = device_is_ready(dev);
+	shell_fprintf(sh, SHELL_INFO, "Board: %s\n", CONFIG_BOARD_TARGET);
+	shell_fprintf(sh, SHELL_INFO, "Device: %s\n", dev->name);
+	shell_fprintf(sh, SHELL_INFO, "state: %s\n", status ? "Ready" : "Not ready");
 	return 0;
 }
 
 int main(void)
 {
-	
-	//int counter = 0;
-
 	if (!device_is_ready(dev)) {
 		return 0;
 	}
 
 	while (1) {
-		// Esto no va más porque ahora lo hago desde SHELL!
-		/*if (counter >= 0 && counter <= 10) {
-			our_sensor_set_blink(dev, true);
-		}
-		else if(counter > 10 && counter <= 20) {
-			our_sensor_set_blink(dev, false);
-			if (counter >= 20)
-				counter = 0;
-		}*/
-			
-		//tomo la muestra! (en este ejemplo hace el cambio de estado del led)
-		//sensor_sample_fetch(dev); 
-		
-		//paso la dir de memoria para que el driver escriba el valor_recibido
-		//sensor_channel_get(dev, SENSOR_CHAN_ALL, &valor_recibido); 
-		
-		//printf("PIN status: %s\n", valor_recibido.val1 ? "OFF" : "ON");
 
 		k_msleep(SLEEP_TIME_MS);
 
-		//counter++;
 	}
 	return 0;
 }
 
 SHELL_STATIC_SUBCMD_SET_CREATE(
 	sub_commands,
-	SHELL_CMD(info, NULL, "Device name and ready state", info_subcmd),
+	SHELL_CMD(info, NULL, "Print board, device name and ready state", info_subcmd),
 	SHELL_CMD(fetch, NULL, "Sensor sample fetch: led", fetch_subcmd),
 	SHELL_CMD(read, NULL, "Sensor channel get: led state", read_subcmd),
 	SHELL_SUBCMD_SET_END

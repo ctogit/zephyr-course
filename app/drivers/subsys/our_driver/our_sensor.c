@@ -54,17 +54,11 @@ static int our_sensor_sample_fetch(const struct device *dev, enum sensor_channel
     const struct our_sensor_config *config = dev->config;
     struct our_sensor_data *data = dev->data;
 
-    if (data->blink) {
-        data->state = !data->state;
-        int ret = gpio_pin_set_dt(&config->pin, data->state);
-        if (ret < 0)
-            return ret;
-    }
-    else if (!data->blink) {
-        int ret = gpio_pin_set_dt(&config->pin, false);
-        if (ret < 0)
-            return ret;
-    }
+    data->state = !data->state;
+    int ret = gpio_pin_set_dt(&config->pin, data->state);
+    if (ret < 0)
+        return ret;
+
     return 0;
 }
 
