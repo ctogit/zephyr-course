@@ -4,7 +4,7 @@
         "zephyr_version":"v4.4.0-rc1-178-gccfd5efa09f9",
         "toolchain":"zephyr/gnu",
         "commit_date":"2026-03-28T15:03:48-05:00",
-        "run_date":"2026-05-28T01:51:00+00:00",
+        "run_date":"2026-05-28T20:47:49+00:00",
         "options":{
             "help":null,
             "zephyr_base":null,
@@ -24,56 +24,48 @@
             "arch":"posix",
             "platform":"native_sim/native",
             "path":"../zephyr-course/tests/ring_buf",
-            "run_id":"5b92a1e87a1ba14d8e0f3b494a2529a3",
+            "run_id":"2ae624c1fe863c1947d7bc72fc121f5a",
             "runnable":true,
             "retries":0,
             "toolchain":"host/gnu",
-            "status":"failed",
-            "log":"*** Booting Zephyr OS build v4.4.0-rc1-178-gccfd5efa09f9 ***\nRunning TESTSUITE ring_buf_boundaries\n===================================================================\nSTART - test_is_full_after_fill\n SKIP - test_is_full_after_fill in 0.000 seconds\n===================================================================\nSTART - test_peek_does_not_consume\n SKIP - test_peek_does_not_consume in 0.000 seconds\n===================================================================\nSTART - test_pop_null_returns_einval\n SKIP - test_pop_null_returns_einval in 0.000 seconds\n===================================================================\nTESTSUITE ring_buf_boundaries succeeded\nRunning TESTSUITE ring_buf_init\n===================================================================\nSTART - test_fresh_state\n PASS - test_fresh_state in 0.000 seconds\n===================================================================\nSTART - test_reinit_clears_state\n\n    Assertion failed at WEST_TOPDIR/zephyr-course/tests/ring_buf/src/test_ring_buf.c:54: ring_buf_init_test_reinit_clears_state: (rb_count() not equal to 1)\nFresh buffer count must be 0\n FAIL - test_reinit_clears_state in 0.000 seconds\n===================================================================\nTESTSUITE ring_buf_init failed.\nRunning TESTSUITE ring_buf_push_pop\n===================================================================\nSTART - test_fifo_order\n SKIP - test_fifo_order in 0.000 seconds\n===================================================================\nSTART - test_push_full_returns_enospc\n SKIP - test_push_full_returns_enospc in 0.000 seconds\n===================================================================\nSTART - test_single_push_pop\n SKIP - test_single_push_pop in 0.000 seconds\n===================================================================\nTESTSUITE ring_buf_push_pop succeeded\n\n------ TESTSUITE SUMMARY START ------\n\nSUITE SKIP -   0.00% [ring_buf_boundaries]: pass = 0, fail = 0, skip = 3, total = 3 duration = 0.000 seconds\n - SKIP - [ring_buf_boundaries.test_is_full_after_fill] duration = 0.000 seconds\n - SKIP - [ring_buf_boundaries.test_peek_does_not_consume] duration = 0.000 seconds\n - SKIP - [ring_buf_boundaries.test_pop_null_returns_einval] duration = 0.000 seconds\n\nSUITE FAIL -  50.00% [ring_buf_init]: pass = 1, fail = 1, skip = 0, total = 2 duration = 0.000 seconds\n - PASS - [ring_buf_init.test_fresh_state] duration = 0.000 seconds\n - FAIL - [ring_buf_init.test_reinit_clears_state] duration = 0.000 seconds\n\nSUITE SKIP -   0.00% [ring_buf_push_pop]: pass = 0, fail = 0, skip = 3, total = 3 duration = 0.000 seconds\n - SKIP - [ring_buf_push_pop.test_fifo_order] duration = 0.000 seconds\n - SKIP - [ring_buf_push_pop.test_push_full_returns_enospc] duration = 0.000 seconds\n - SKIP - [ring_buf_push_pop.test_single_push_pop] duration = 0.000 seconds\n\n------ TESTSUITE SUMMARY END ------\n\n===================================================================\nRunID: 5b92a1e87a1ba14d8e0f3b494a2529a3\nPROJECT EXECUTION FAILED\n",
-            "reason":"rc=1",
-            "execution_time":"0.03",
-            "build_time":"17.62",
+            "status":"passed",
+            "execution_time":"0.02",
+            "build_time":"11.62",
             "testcases":[
                 {
                     "identifier":"homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill",
                     "execution_time":"0.00",
-                    "status":"skipped",
-                    "reason":"ztest skip"
+                    "status":"passed"
                 },
                 {
                     "identifier":"homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval",
                     "execution_time":"0.00",
-                    "status":"skipped",
-                    "reason":"ztest skip"
+                    "status":"passed"
                 },
                 {
                     "identifier":"homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume",
                     "execution_time":"0.00",
-                    "status":"skipped",
-                    "reason":"ztest skip"
+                    "status":"passed"
                 },
                 {
                     "identifier":"homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc",
                     "execution_time":"0.00",
-                    "status":"skipped",
-                    "reason":"ztest skip"
+                    "status":"passed"
                 },
                 {
                     "identifier":"homework.unit.ring_buf.ring_buf_push_pop.fifo_order",
                     "execution_time":"0.00",
-                    "status":"skipped",
-                    "reason":"ztest skip"
+                    "status":"passed"
                 },
                 {
                     "identifier":"homework.unit.ring_buf.ring_buf_push_pop.single_push_pop",
                     "execution_time":"0.00",
-                    "status":"skipped",
-                    "reason":"ztest skip"
+                    "status":"passed"
                 },
                 {
                     "identifier":"homework.unit.ring_buf.ring_buf_init.reinit_clears_state",
                     "execution_time":"0.00",
-                    "status":"failed"
+                    "status":"passed"
                 },
                 {
                     "identifier":"homework.unit.ring_buf.ring_buf_init.fresh_state",

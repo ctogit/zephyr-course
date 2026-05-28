@@ -14,6 +14,9 @@ config:
   # Build outputs:
   elf_file: zephyr.elf
   exe_file: zephyr.exe
+  # Host tools:
+  openocd: /usr/bin/openocd
+  openocd_search:
 
 # Runner specific arguments
 args:

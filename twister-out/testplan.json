@@ -4,7 +4,7 @@
         "zephyr_version":"v4.4.0-rc1-178-gccfd5efa09f9",
         "toolchain":"zephyr/gnu",
         "commit_date":"2026-03-28T15:03:48-05:00",
-        "run_date":"2026-05-28T01:51:00+00:00",
+        "run_date":"2026-05-28T20:47:49+00:00",
         "options":{
             "help":null,
             "zephyr_base":null,
@@ -24,7 +24,7 @@
             "arch":"posix",
             "platform":"native_sim/native",
             "path":"../zephyr-course/tests/ring_buf",
-            "run_id":"5b92a1e87a1ba14d8e0f3b494a2529a3",
+            "run_id":"2ae624c1fe863c1947d7bc72fc121f5a",
             "runnable":true,
             "retries":0,
             "toolchain":"host/gnu",
@@ -33,7 +33,19 @@
             "build_time":"0.00",
             "testcases":[
                 {
+                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume",
+                    "status":"None"
+                },
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.single_push_pop",
+                    "status":"None"
+                },
+                {
                     "identifier":"homework.unit.ring_buf.ring_buf_init.reinit_clears_state",
+                    "status":"None"
+                },
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.fifo_order",
                     "status":"None"
                 },
                 {
@@ -41,11 +53,7 @@
                     "status":"None"
                 },
                 {
-                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume",
-                    "status":"None"
-                },
-                {
-                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.fifo_order",
+                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval",
                     "status":"None"
                 },
                 {
@@ -54,14 +62,6 @@
                 },
                 {
                     "identifier":"homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc",
-                    "status":"None"
-                },
-                {
-                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval",
-                    "status":"None"
-                },
-                {
-                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.single_push_pop",
                     "status":"None"
                 }
             ]

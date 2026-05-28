@@ -48,7 +48,7 @@ ZTEST(ring_buf_init, test_reinit_clears_state)
 	 * See TEST_SPEC.md "Suite ring_buf_init" #2.
 	 */
 
-	zassert_equal(rb_push(100), 0, "Push should succeed");
+	zassert_equal(rb_push(99), 0, "Push should succeed");
 	zassert_equal(rb_init(4), 0, "Re-init the ring buffer should return 0");
 	zassert_true(rb_is_empty(), "Fresh buffer must be empty");
 	zassert_equal(rb_count(), 0, "Fresh buffer count must be 0");
@@ -68,7 +68,11 @@ ZTEST(ring_buf_push_pop, test_single_push_pop)
 	/* TODO(l8-task1): rb_push(42), rb_pop(&v) -> v == 42, buffer empty after.
 	 * See TEST_SPEC.md "Suite ring_buf_push_pop" #1.
 	 */
-	ztest_test_skip();
+	int v;
+	zassert_ok(rb_push(42), "Push should succeed and return 0");
+	zassert_ok(rb_pop(&v), "Pop should succeed and 42 loaded in v");
+	zassert_equal(v, 42, "Pop value should be 42 because it was the oldest value pushed");
+	zassert_true(rb_is_empty(), "Buffer must be empty after Pop");
 }
 
 ZTEST(ring_buf_push_pop, test_fifo_order)
@@ -77,7 +81,21 @@ ZTEST(ring_buf_push_pop, test_fifo_order)
 	 * and verify the values come out as 1, 2, 3 in that order.
 	 * See TEST_SPEC.md "Suite ring_buf_push_pop" #2.
 	 */
-	ztest_test_skip();
+	int v, w, z;
+
+	zassert_ok(rb_push(1), "Push should succeed and return 0");
+	zassert_ok(rb_push(2), "Push should succeed and return 0");
+	zassert_ok(rb_push(3), "Push should succeed and return 0");
+	
+	zassert_ok(rb_pop(&v), "Pop should succeed and 1 loaded in v");
+	zassert_ok(rb_pop(&w), "Pop should succeed and 2 loaded in w");
+	zassert_ok(rb_pop(&z), "Pop should succeed and 3 loaded in z");
+
+	zassert_equal(v, 1, "Pop value should be 1 because it was the oldest value pushed");
+	zassert_equal(w, 2, "Pop value should be 2");
+	zassert_equal(z, 3, "Pop value should be 3 because it was the newest value pushed");
+
+	zassert_true(rb_is_empty(), "Buffer must be empty after Pop");
 }
 
 ZTEST(ring_buf_push_pop, test_push_full_returns_enospc)
@@ -86,7 +104,17 @@ ZTEST(ring_buf_push_pop, test_push_full_returns_enospc)
 	 * one more value -> -ENOSPC.
 	 * See TEST_SPEC.md "Suite ring_buf_push_pop" #3.
 	 */
-	ztest_test_skip();
+
+	zassert_ok(rb_push(1), "Push should succeed and return 0");
+	zassert_ok(rb_push(2), "Push should succeed and return 0");
+	zassert_ok(rb_push(3), "Push should succeed and return 0");
+	zassert_ok(rb_push(4), "Push should succeed and return 0");
+
+	zassert_true(rb_is_full(), "Should be true");
+
+	zassert_equal(rb_push(99), -ENOSPC, "Should return that msg: Error No Space");
+
+	zassert_equal(rb_count(), 4, "5th element out");
 }
 
 /*
@@ -104,7 +132,15 @@ ZTEST(ring_buf_boundaries, test_peek_does_not_consume)
 	 * -> v == 7; rb_count() still == 1.
 	 * See TEST_SPEC.md "Suite ring_buf_boundaries" #1.
 	 */
-	ztest_test_skip();
+	int v;
+	zassert_ok(rb_push(7), "Push should succeed and return 0");
+
+	zassert_ok(rb_peek(&v), "Pick should succeed and value 7 loaded in v");
+	zassert_equal(v, 7, "Value peeked first time");
+	zassert_ok(rb_peek(&v), "Pick should succeed and value 7 loaded in v");
+	zassert_equal(v, 7, "Value peeked second time");
+
+	zassert_equal(rb_count(), 1, "I peeked 2 times, but count should remains 1");
 }
 
 ZTEST(ring_buf_boundaries, test_pop_null_returns_einval)
@@ -112,7 +148,7 @@ ZTEST(ring_buf_boundaries, test_pop_null_returns_einval)
 	/* TODO(l8-task1): rb_pop(NULL) -> -EINVAL.
 	 * See TEST_SPEC.md "Suite ring_buf_boundaries" #2.
 	 */
-	ztest_test_skip();
+	zassert_equal(rb_pop(NULL), -EINVAL, "Pop should return msg Error Input Value");
 }
 
 ZTEST(ring_buf_boundaries, test_is_full_after_fill)
@@ -120,5 +156,12 @@ ZTEST(ring_buf_boundaries, test_is_full_after_fill)
 	/* TODO(l8-task1): push 4 values -> rb_is_full() == true, rb_count() == 4.
 	 * See TEST_SPEC.md "Suite ring_buf_boundaries" #3.
 	 */
-	ztest_test_skip();
+	zassert_ok(rb_push(1), "Push should succeed and return 0");
+	zassert_ok(rb_push(2), "Push should succeed and return 0");
+	zassert_ok(rb_push(3), "Push should succeed and return 0");
+	zassert_ok(rb_push(4), "Push should succeed and return 0");
+
+	zassert_true(rb_is_full(), "Buffer should be full");
+
+	zassert_equal(rb_count(), 4, "4 values were loaded");
 }

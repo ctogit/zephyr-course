@@ -343,7 +343,7 @@ MAKE:FILEPATH=/usr/bin/make
 NSI_DIR:PATH=/home/cto/zephyrproject/zephyr/scripts/native_simulator
 
 //Path to a program.
-OPENOCD:FILEPATH=OPENOCD-NOTFOUND
+OPENOCD:FILEPATH=/usr/bin/openocd
 
 //Path to a program.
 PAHOLE:FILEPATH=PAHOLE-NOTFOUND
@@ -373,7 +373,7 @@ SOC_FULL_DIR:PATH=/home/cto/zephyrproject/zephyr/soc/native/inf_clock
 TC_NAME:UNINITIALIZED=homework.unit.ring_buf
 
 //No help, variable specified on the command line.
-TC_RUNID:UNINITIALIZED=5b92a1e87a1ba14d8e0f3b494a2529a3
+TC_RUNID:UNINITIALIZED=2ae624c1fe863c1947d7bc72fc121f5a
 
 //True if toolchain supports libstdc++
 TOOLCHAIN_HAS_GLIBCXX:BOOL=ON
