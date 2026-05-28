@@ -1,0 +1,125 @@
+2026-05-28 01:50:58,566 - twister - INFO - Using Ninja..
+2026-05-28 01:50:58,697 - twister - INFO - Zephyr version: v4.4.0-rc1-178-gccfd5efa09f9
+2026-05-28 01:50:58,701 - twister - DEBUG - Running cmake script /home/cto/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-05-28 01:50:58,701 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/cto/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-05-28 01:51:00,195 - twister - DEBUG - Finished running /home/cto/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-05-28 01:51:00,195 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-05-28 01:51:02,009 - twister - DEBUG - Reading testsuite configuration files under /home/cto/zephyrproject/zephyr-course/tests/ring_buf...
+2026-05-28 01:51:02,009 - twister - DEBUG - Found possible testsuite in /home/cto/zephyrproject/zephyr-course/tests/ring_buf
+2026-05-28 01:51:02,012 - twister - DEBUG - No duplicates found.
+2026-05-28 01:51:02,013 - twister - DEBUG -  platform filter: ['native_sim']
+2026-05-28 01:51:02,013 - twister - DEBUG - platform_pattern: []
+2026-05-28 01:51:02,013 - twister - DEBUG -    vendor filter: []
+2026-05-28 01:51:02,013 - twister - DEBUG -      arch_filter: None
+2026-05-28 01:51:02,013 - twister - DEBUG -       tag_filter: None
+2026-05-28 01:51:02,013 - twister - DEBUG -      exclude_tag: None
+2026-05-28 01:51:02,013 - twister - DEBUG - Checking platform filter: ['native_sim']
+2026-05-28 01:51:02,013 - twister - INFO - Building initial testsuite list...
+2026-05-28 01:51:02,016 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-05-28 01:51:02,016 - twister - INFO - Writing JSON report /home/cto/zephyrproject/zephyr-course/twister-out/testplan.json
+2026-05-28 01:51:02,042 - twister - INFO - JOBS: 4
+2026-05-28 01:51:02,042 - twister - INFO - Adding tasks to the queue...
+2026-05-28 01:51:02,043 - twister - DEBUG - adding native_sim/native/host/gnu/homework.unit.ring_buf
+2026-05-28 01:51:02,045 - twister - INFO - Added initial list of jobs to queue
+2026-05-28 01:51:02,057 - twister - DEBUG - Launched 4 jobs
+2026-05-28 01:51:02,059 - twister - DEBUG - Running cmake on /home/cto/zephyrproject/zephyr-course/tests/ring_buf for native_sim/native
+2026-05-28 01:51:02,061 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf -DTC_RUNID=5b92a1e87a1ba14d8e0f3b494a2529a3 -DTC_NAME=homework.unit.ring_buf -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/home/cto/zephyrproject/.venv/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=host/gnu -S/home/cto/zephyrproject/zephyr-course/tests/ring_buf -DBOARD=native_sim/native
+2026-05-28 01:51:13,205 - twister - DEBUG - Finished running cmake /home/cto/zephyrproject/zephyr-course/tests/ring_buf for native_sim/native in 11.14 seconds
+2026-05-28 01:51:13,210 - twister - DEBUG - build test: native_sim/native/host/gnu/homework.unit.ring_buf
+2026-05-28 01:51:13,210 - twister - DEBUG - Building /home/cto/zephyrproject/zephyr-course/tests/ring_buf for native_sim/native
+2026-05-28 01:51:13,211 - twister - DEBUG - Running /usr/bin/cmake --build /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf
+2026-05-28 01:51:19,694 - twister - DEBUG - Finished building /home/cto/zephyrproject/zephyr-course/tests/ring_buf for native_sim/native in 6.48 seconds
+2026-05-28 01:51:19,694 - twister - DEBUG - Determine test cases for test instance: native_sim/native/host/gnu/homework.unit.ring_buf
+2026-05-28 01:51:19,695 - twister - DEBUG - Determine test cases for test suite: homework.unit.ring_buf
+2026-05-28 01:51:19,779 - twister - DEBUG - Test instance native_sim/native/host/gnu/homework.unit.ring_buf already has 8 testcase(s) known: [<TestCase homework.unit.ring_buf.ring_buf_init.reinit_clears_state with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.fifo_order with None>, <TestCase homework.unit.ring_buf.ring_buf_init.fresh_state with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc with None>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval with None>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.single_push_pop with None>]
+2026-05-28 01:51:19,779 - twister - DEBUG - Detected 8 Ztest case(s): [homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill, homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval, homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume, homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc, homework.unit.ring_buf.ring_buf_push_pop.fifo_order, homework.unit.ring_buf.ring_buf_push_pop.single_push_pop, homework.unit.ring_buf.ring_buf_init.reinit_clears_state, homework.unit.ring_buf.ring_buf_init.fresh_state] in /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.elf
+2026-05-28 01:51:19,787 - twister - DEBUG - run test: native_sim/native/host/gnu/homework.unit.ring_buf
+2026-05-28 01:51:19,787 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-05-28 01:51:19,787 - twister - DEBUG - Spawning process: /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.exe
+in directory: /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf
+2026-05-28 01:51:19,788 - twister - DEBUG - Spawning BinaryHandler Thread for native_sim/native/host/gnu/homework.unit.ring_buf
+2026-05-28 01:51:19,790 - twister - DEBUG - OUTPUT: *** Booting Zephyr OS build v4.4.0-rc1-178-gccfd5efa09f9 ***
+2026-05-28 01:51:19,790 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_boundaries
+2026-05-28 01:51:19,791 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,791 - twister - DEBUG - OUTPUT: START - test_is_full_after_fill
+2026-05-28 01:51:19,792 - twister - DEBUG - OUTPUT:  SKIP - test_is_full_after_fill in 0.000 seconds
+2026-05-28 01:51:19,792 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,793 - twister - DEBUG - OUTPUT: START - test_peek_does_not_consume
+2026-05-28 01:51:19,793 - twister - DEBUG - OUTPUT:  SKIP - test_peek_does_not_consume in 0.000 seconds
+2026-05-28 01:51:19,793 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,794 - twister - DEBUG - OUTPUT: START - test_pop_null_returns_einval
+2026-05-28 01:51:19,794 - twister - DEBUG - OUTPUT:  SKIP - test_pop_null_returns_einval in 0.000 seconds
+2026-05-28 01:51:19,794 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,795 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_boundaries succeeded
+2026-05-28 01:51:19,795 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_init
+2026-05-28 01:51:19,796 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,796 - twister - DEBUG - OUTPUT: START - test_fresh_state
+2026-05-28 01:51:19,796 - twister - DEBUG - OUTPUT:  PASS - test_fresh_state in 0.000 seconds
+2026-05-28 01:51:19,797 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,799 - twister - DEBUG - OUTPUT: START - test_reinit_clears_state
+2026-05-28 01:51:19,800 - twister - DEBUG - OUTPUT: 
+2026-05-28 01:51:19,800 - twister - DEBUG - OUTPUT:     Assertion failed at WEST_TOPDIR/zephyr-course/tests/ring_buf/src/test_ring_buf.c:54: ring_buf_init_test_reinit_clears_state: (rb_count() not equal to 1)
+2026-05-28 01:51:19,800 - twister - DEBUG - OUTPUT: Fresh buffer count must be 0
+2026-05-28 01:51:19,801 - twister - DEBUG - OUTPUT:  FAIL - test_reinit_clears_state in 0.000 seconds
+2026-05-28 01:51:19,801 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,802 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_init failed.
+2026-05-28 01:51:19,802 - twister - DEBUG - OUTPUT: Running TESTSUITE ring_buf_push_pop
+2026-05-28 01:51:19,802 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,803 - twister - DEBUG - OUTPUT: START - test_fifo_order
+2026-05-28 01:51:19,803 - twister - DEBUG - OUTPUT:  SKIP - test_fifo_order in 0.000 seconds
+2026-05-28 01:51:19,804 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,804 - twister - DEBUG - OUTPUT: START - test_push_full_returns_enospc
+2026-05-28 01:51:19,805 - twister - DEBUG - OUTPUT:  SKIP - test_push_full_returns_enospc in 0.000 seconds
+2026-05-28 01:51:19,805 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,805 - twister - DEBUG - OUTPUT: START - test_single_push_pop
+2026-05-28 01:51:19,806 - twister - DEBUG - OUTPUT:  SKIP - test_single_push_pop in 0.000 seconds
+2026-05-28 01:51:19,806 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,807 - twister - DEBUG - OUTPUT: TESTSUITE ring_buf_push_pop succeeded
+2026-05-28 01:51:19,807 - twister - DEBUG - OUTPUT: 
+2026-05-28 01:51:19,808 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY START ------
+2026-05-28 01:51:19,808 - twister - DEBUG - OUTPUT: 
+2026-05-28 01:51:19,808 - twister - DEBUG - OUTPUT: SUITE SKIP -   0.00% [ring_buf_boundaries]: pass = 0, fail = 0, skip = 3, total = 3 duration = 0.000 seconds
+2026-05-28 01:51:19,809 - twister - DEBUG - OUTPUT:  - SKIP - [ring_buf_boundaries.test_is_full_after_fill] duration = 0.000 seconds
+2026-05-28 01:51:19,809 - twister - DEBUG - OUTPUT:  - SKIP - [ring_buf_boundaries.test_peek_does_not_consume] duration = 0.000 seconds
+2026-05-28 01:51:19,810 - twister - DEBUG - OUTPUT:  - SKIP - [ring_buf_boundaries.test_pop_null_returns_einval] duration = 0.000 seconds
+2026-05-28 01:51:19,810 - twister - DEBUG - OUTPUT: 
+2026-05-28 01:51:19,811 - twister - DEBUG - OUTPUT: SUITE FAIL -  50.00% [ring_buf_init]: pass = 1, fail = 1, skip = 0, total = 2 duration = 0.000 seconds
+2026-05-28 01:51:19,811 - twister - DEBUG - OUTPUT:  - PASS - [ring_buf_init.test_fresh_state] duration = 0.000 seconds
+2026-05-28 01:51:19,811 - twister - DEBUG - OUTPUT:  - FAIL - [ring_buf_init.test_reinit_clears_state] duration = 0.000 seconds
+2026-05-28 01:51:19,812 - twister - DEBUG - OUTPUT: 
+2026-05-28 01:51:19,812 - twister - DEBUG - OUTPUT: SUITE SKIP -   0.00% [ring_buf_push_pop]: pass = 0, fail = 0, skip = 3, total = 3 duration = 0.000 seconds
+2026-05-28 01:51:19,813 - twister - DEBUG - OUTPUT:  - SKIP - [ring_buf_push_pop.test_fifo_order] duration = 0.000 seconds
+2026-05-28 01:51:19,813 - twister - DEBUG - OUTPUT:  - SKIP - [ring_buf_push_pop.test_push_full_returns_enospc] duration = 0.000 seconds
+2026-05-28 01:51:19,814 - twister - DEBUG - OUTPUT:  - SKIP - [ring_buf_push_pop.test_single_push_pop] duration = 0.000 seconds
+2026-05-28 01:51:19,814 - twister - DEBUG - OUTPUT: 
+2026-05-28 01:51:19,814 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY END ------
+2026-05-28 01:51:19,815 - twister - DEBUG - OUTPUT: 
+2026-05-28 01:51:19,816 - twister - DEBUG - OUTPUT: ===================================================================
+2026-05-28 01:51:19,816 - twister - DEBUG - OUTPUT: RunID: 5b92a1e87a1ba14d8e0f3b494a2529a3
+2026-05-28 01:51:19,816 - twister - DEBUG - OUTPUT: PROJECT EXECUTION FAILED
+2026-05-28 01:51:19,819 - twister - DEBUG - Expected suite names:['ring_buf_init', 'ring_buf_push_pop', 'ring_buf_boundaries']
+2026-05-28 01:51:19,819 - twister - DEBUG - Detected suite names:['ring_buf_boundaries', 'ring_buf_init', 'ring_buf_push_pop']
+2026-05-28 01:51:19,819 - twister - DEBUG - run status: native_sim/native/host/gnu/homework.unit.ring_buf failed
+2026-05-28 01:51:19,823 - twister - ERROR - native_sim/native         homework.unit.ring_buf                             [31mFAILED[39m: rc=1
+2026-05-28 01:51:19,823 - twister - ERROR - see: [33m/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/handler.log[39m
+2026-05-28 01:51:19,841 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-05-28 01:51:19,855 - twister - INFO - [31m0 of 1[39m executed test configurations passed (0.00%), 0 built (not run), [31m1[39m failed, 0 errored, with no warnings in 21.29 seconds.
+2026-05-28 01:51:19,856 - twister - INFO - 1 of 2 executed test cases passed (50.00%), 1 failed on 1 out of total 1473 platforms (0.07%).
+2026-05-28 01:51:19,856 - twister - INFO - 6 selected test cases not executed: 6 skipped.
+2026-05-28 01:51:19,856 - twister - INFO - [32m1[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-05-28 01:51:19,856 - twister - INFO - Saving reports...
+2026-05-28 01:51:19,856 - twister - INFO - Writing JSON report /home/cto/zephyrproject/zephyr-course/twister-out/twister.json
+2026-05-28 01:51:19,858 - twister - INFO - Writing xunit report /home/cto/zephyrproject/zephyr-course/twister-out/twister.xml...
+2026-05-28 01:51:19,860 - twister - INFO - Writing xunit report /home/cto/zephyrproject/zephyr-course/twister-out/twister_report.xml...
+2026-05-28 01:51:19,862 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-05-28 01:51:19,863 - twister - INFO - The following issues were found (showing the top 10 items):
+2026-05-28 01:51:19,863 - twister - INFO - 1) homework.unit.ring_buf on native_sim/native failed (rc=1)
+2026-05-28 01:51:19,863 - twister - INFO - 
+2026-05-28 01:51:19,863 - twister - INFO - To rerun the tests, call twister using the following commandline:
+2026-05-28 01:51:19,863 - twister - INFO - west twister -p <PLATFORM> -s <TEST ID>, for example:
+2026-05-28 01:51:19,863 - twister - INFO - 
+2026-05-28 01:51:19,863 - twister - INFO - west twister -p native_sim/native -s homework.unit.ring_buf
+2026-05-28 01:51:19,864 - twister - INFO - or with west:
+2026-05-28 01:51:19,864 - twister - INFO - west build -p -b native_sim/native tests/ring_buf -T homework.unit.ring_buf
+2026-05-28 01:51:19,864 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-05-28 01:51:19,864 - twister - INFO - Run completed

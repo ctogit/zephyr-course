@@ -1,0 +1,69 @@
+<testsuites>
+	<testsuite name="native_sim/native" timestamp="2026-05-28T01:51:02.016671" time="0.03" tests="1" failures="1" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="v4.4.0-rc1-178-gccfd5efa09f9" />
+		</properties>
+		<testcase classname="native_sim/native:homework.unit.ring_buf" name="homework.unit.ring_buf" time="0.03">
+			<failure type="failure" message="rc=1">*** Booting Zephyr OS build v4.4.0-rc1-178-gccfd5efa09f9 ***
+Running TESTSUITE ring_buf_boundaries
+===================================================================
+START - test_is_full_after_fill
+ SKIP - test_is_full_after_fill in 0.000 seconds
+===================================================================
+START - test_peek_does_not_consume
+ SKIP - test_peek_does_not_consume in 0.000 seconds
+===================================================================
+START - test_pop_null_returns_einval
+ SKIP - test_pop_null_returns_einval in 0.000 seconds
+===================================================================
+TESTSUITE ring_buf_boundaries succeeded
+Running TESTSUITE ring_buf_init
+===================================================================
+START - test_fresh_state
+ PASS - test_fresh_state in 0.000 seconds
+===================================================================
+START - test_reinit_clears_state
+
+    Assertion failed at WEST_TOPDIR/zephyr-course/tests/ring_buf/src/test_ring_buf.c:54: ring_buf_init_test_reinit_clears_state: (rb_count() not equal to 1)
+Fresh buffer count must be 0
+ FAIL - test_reinit_clears_state in 0.000 seconds
+===================================================================
+TESTSUITE ring_buf_init failed.
+Running TESTSUITE ring_buf_push_pop
+===================================================================
+START - test_fifo_order
+ SKIP - test_fifo_order in 0.000 seconds
+===================================================================
+START - test_push_full_returns_enospc
+ SKIP - test_push_full_returns_enospc in 0.000 seconds
+===================================================================
+START - test_single_push_pop
+ SKIP - test_single_push_pop in 0.000 seconds
+===================================================================
+TESTSUITE ring_buf_push_pop succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE SKIP -   0.00% [ring_buf_boundaries]: pass = 0, fail = 0, skip = 3, total = 3 duration = 0.000 seconds
+ - SKIP - [ring_buf_boundaries.test_is_full_after_fill] duration = 0.000 seconds
+ - SKIP - [ring_buf_boundaries.test_peek_does_not_consume] duration = 0.000 seconds
+ - SKIP - [ring_buf_boundaries.test_pop_null_returns_einval] duration = 0.000 seconds
+
+SUITE FAIL -  50.00% [ring_buf_init]: pass = 1, fail = 1, skip = 0, total = 2 duration = 0.000 seconds
+ - PASS - [ring_buf_init.test_fresh_state] duration = 0.000 seconds
+ - FAIL - [ring_buf_init.test_reinit_clears_state] duration = 0.000 seconds
+
+SUITE SKIP -   0.00% [ring_buf_push_pop]: pass = 0, fail = 0, skip = 3, total = 3 duration = 0.000 seconds
+ - SKIP - [ring_buf_push_pop.test_fifo_order] duration = 0.000 seconds
+ - SKIP - [ring_buf_push_pop.test_push_full_returns_enospc] duration = 0.000 seconds
+ - SKIP - [ring_buf_push_pop.test_single_push_pop] duration = 0.000 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+RunID: 5b92a1e87a1ba14d8e0f3b494a2529a3
+PROJECT EXECUTION FAILED
+</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

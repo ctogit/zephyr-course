@@ -1,0 +1,1864 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      The target system is: Generic - 4.4.0 - posix
+      The host system is: Linux - 6.6.114.1-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:135 (enable_language)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+      Copyright (C) 2023 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:145 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-2Dx82d"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-2Dx82d"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-2Dx82d'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_9d4c3
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd  -fuse-ld=bfd -o CMakeFiles/cmTC_9d4c3.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-2Dx82d/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_9d4c3.dir/src.c.obj -o cmTC_9d4c3   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:37 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-4CtGlA"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-4CtGlA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wall_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-4CtGlA'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c1916
+        [1/2] /usr/bin/gcc -Dcheck_Wall_C__fuse_ld_bfd  -fuse-ld=bfd   -Wall -o CMakeFiles/cmTC_c1916.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-4CtGlA/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_c1916.dir/src.c.obj -o cmTC_c1916   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:37 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-LT3EhN"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-LT3EhN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wformat__Wformat_security_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-LT3EhN'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4b752
+        [1/2] /usr/bin/gcc -Dcheck_Wformat__Wformat_security_C__fuse_ld_bfd  -fuse-ld=bfd   -Wformat -Wformat-security -o CMakeFiles/cmTC_4b752.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-LT3EhN/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_4b752.dir/src.c.obj -o cmTC_4b752   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:37 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-BerMjl"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-BerMjl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wformat__Wformat_zero_length_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-BerMjl'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_25f68
+        [1/2] /usr/bin/gcc -Dcheck_Wformat__Wformat_zero_length_C__fuse_ld_bfd  -fuse-ld=bfd   -Wformat -Wformat-zero-length -o CMakeFiles/cmTC_25f68.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-BerMjl/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_25f68.dir/src.c.obj -o cmTC_25f68   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:44 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-dyHJ0O"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-dyHJ0O"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wdouble_promotion_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-dyHJ0O'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_5d813
+        [1/2] /usr/bin/gcc -Dcheck_Wdouble_promotion_C__fuse_ld_bfd  -fuse-ld=bfd   -Wdouble-promotion -o CMakeFiles/cmTC_5d813.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-dyHJ0O/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_5d813.dir/src.c.obj -o cmTC_5d813   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:46 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-hKCC2z"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-hKCC2z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wpointer_sign_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-hKCC2z'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_fcfe4
+        [1/2] /usr/bin/gcc -Dcheck_Wpointer_sign_C__fuse_ld_bfd  -fuse-ld=bfd   -Wpointer-sign -o CMakeFiles/cmTC_fcfe4.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-hKCC2z/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_fcfe4.dir/src.c.obj -o cmTC_fcfe4   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:49 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-FIVaUX"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-FIVaUX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wpointer_arith_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-FIVaUX'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2fe92
+        [1/2] /usr/bin/gcc -Dcheck_Wpointer_arith_C__fuse_ld_bfd  -fuse-ld=bfd   -Wpointer-arith -o CMakeFiles/cmTC_2fe92.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-FIVaUX/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_2fe92.dir/src.c.obj -o cmTC_2fe92   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:51 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-HPUdEa"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-HPUdEa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wmisleading_indentation_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-HPUdEa'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c7847
+        [1/2] /usr/bin/gcc -Dcheck_Wmisleading_indentation_C__fuse_ld_bfd  -fuse-ld=bfd   -Wmisleading-indentation -o CMakeFiles/cmTC_c7847.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-HPUdEa/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_c7847.dir/src.c.obj -o cmTC_c7847   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:54 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fZEXrd"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fZEXrd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wexpansion_to_defined_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fZEXrd'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ddf93
+        [1/2] /usr/bin/gcc -Dcheck_Wexpansion_to_defined_C__fuse_ld_bfd  -fuse-ld=bfd   -Wexpansion-to-defined -o CMakeFiles/cmTC_ddf93.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fZEXrd/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_ddf93.dir/src.c.obj -o cmTC_ddf93   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:64 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-jTb0PZ"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-jTb0PZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wlogical_op_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-jTb0PZ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_13dd2
+        [1/2] /usr/bin/gcc -Dcheck_Wlogical_op_C__fuse_ld_bfd  -fuse-ld=bfd   -Wlogical-op -o CMakeFiles/cmTC_13dd2.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-jTb0PZ/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_13dd2.dir/src.c.obj -o cmTC_13dd2   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:64 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-VWT8mU"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-VWT8mU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wmissing_field_initializers_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-VWT8mU'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0ba20
+        [1/2] /usr/bin/gcc -Dcheck_Wmissing_field_initializers_C__fuse_ld_bfd  -fuse-ld=bfd   -Wmissing-field-initializers -o CMakeFiles/cmTC_0ba20.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-VWT8mU/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_0ba20.dir/src.c.obj -o cmTC_0ba20   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:80 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-rZJ7cc"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-rZJ7cc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wpacked_bitfield_compat_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-rZJ7cc'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f93b0
+        [1/2] /usr/bin/gcc -Dcheck_Wpacked_bitfield_compat_C__fuse_ld_bfd  -fuse-ld=bfd   -Wpacked-bitfield-compat -o CMakeFiles/cmTC_f93b0.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-rZJ7cc/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_f93b0.dir/src.c.obj -o cmTC_f93b0   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:80 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-R0nC4M"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-R0nC4M"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wvla_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-R0nC4M'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_6937b
+        [1/2] /usr/bin/gcc -Dcheck_Wvla_C__fuse_ld_bfd  -fuse-ld=bfd   -Wvla -o CMakeFiles/cmTC_6937b.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-R0nC4M/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_6937b.dir/src.c.obj -o cmTC_6937b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:99 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fmaade"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fmaade"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wunused_but_set_variable_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fmaade'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_bf468
+        [1/2] /usr/bin/gcc -Dcheck_Wunused_but_set_variable_C__fuse_ld_bfd  -fuse-ld=bfd   -Wunused-but-set-variable -o CMakeFiles/cmTC_bf468.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fmaade/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_bf468.dir/src.c.obj -o cmTC_bf468   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:101 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-pq91Oz"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-pq91Oz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Werror_implicit_int_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-pq91Oz'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_bc0cb
+        [1/2] /usr/bin/gcc -Dcheck_Werror_implicit_int_C__fuse_ld_bfd  -fuse-ld=bfd   -Werror=implicit-int -o CMakeFiles/cmTC_bc0cb.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-pq91Oz/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_bc0cb.dir/src.c.obj -o cmTC_bc0cb   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:129 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-1FgjeO"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-1FgjeO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_printf_return_value_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-1FgjeO'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_d5062
+        [1/2] /usr/bin/gcc -Dcheck_fno_printf_return_value_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-printf-return-value -o CMakeFiles/cmTC_d5062.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-1FgjeO/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_d5062.dir/src.c.obj -o cmTC_d5062   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:193 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-FKPhOt"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-FKPhOt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_mstack_protector_guard_global_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-FKPhOt'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4acb3
+        [1/2] /usr/bin/gcc -Dcheck_mstack_protector_guard_global_C__fuse_ld_bfd  -fuse-ld=bfd   -mstack-protector-guard=global -o CMakeFiles/cmTC_4acb3.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-FKPhOt/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_4acb3.dir/src.c.obj -o cmTC_4acb3   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:210 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-V4QcDj"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-V4QcDj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fsanitize_undefined_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-V4QcDj'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_7a83e
+        [1/2] /usr/bin/gcc -Dcheck_fsanitize_undefined_C__fuse_ld_bfd  -fuse-ld=bfd   -fsanitize=undefined -o CMakeFiles/cmTC_7a83e.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-V4QcDj/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_7a83e.dir/src.c.obj -o cmTC_7a83e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:211 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-grnreS"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-grnreS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fsanitize_undefined_trap_on_error_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-grnreS'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1c35b
+        [1/2] /usr/bin/gcc -Dcheck_fsanitize_undefined_trap_on_error_C__fuse_ld_bfd  -fuse-ld=bfd   -fsanitize-undefined-trap-on-error -o CMakeFiles/cmTC_1c35b.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-grnreS/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_1c35b.dir/src.c.obj -o cmTC_1c35b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:215 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-qSsOtt"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-qSsOtt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_freestanding_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-qSsOtt'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ae6f9
+        [1/2] /usr/bin/gcc -Dcheck_fno_freestanding_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-freestanding -o CMakeFiles/cmTC_ae6f9.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-qSsOtt/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_ae6f9.dir/src.c.obj -o cmTC_ae6f9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:218 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-XPsfi5"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-XPsfi5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_ffreestanding_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-XPsfi5'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4bcb3
+        [1/2] /usr/bin/gcc -Dcheck_ffreestanding_C__fuse_ld_bfd  -fuse-ld=bfd   -ffreestanding -o CMakeFiles/cmTC_4bcb3.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-XPsfi5/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_4bcb3.dir/src.c.obj -o cmTC_4bcb3   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:234 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-U7M0lQ"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-U7M0lQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_gdwarf_4_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-U7M0lQ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3ee33
+        [1/2] /usr/bin/gcc -Dcheck_gdwarf_4_C__fuse_ld_bfd  -fuse-ld=bfd   -gdwarf-4 -o CMakeFiles/cmTC_3ee33.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-U7M0lQ/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_3ee33.dir/src.c.obj -o cmTC_3ee33   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:253 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-LHR4Vz"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-LHR4Vz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fdiagnostics_color_always_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-LHR4Vz'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_fa48b
+        [1/2] /usr/bin/gcc -Dcheck_fdiagnostics_color_always_C__fuse_ld_bfd  -fuse-ld=bfd   -fdiagnostics-color=always -o CMakeFiles/cmTC_fa48b.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-LHR4Vz/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_fa48b.dir/src.c.obj -o cmTC_fa48b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:5 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-RSA9oM"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-RSA9oM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___gc_sections"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-RSA9oM'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2bb74
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___gc_sections  -fuse-ld=bfd -Wl,--gc-sections -o CMakeFiles/cmTC_2bb74.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-RSA9oM/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--gc-sections  CMakeFiles/cmTC_2bb74.dir/src.c.obj -o cmTC_2bb74   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:5 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fhVeea"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fhVeea"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___build_id_none"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fhVeea'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a1fee
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___build_id_none  -fuse-ld=bfd -Wl,--build-id=none -o CMakeFiles/cmTC_a1fee.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-fhVeea/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--build-id=none  CMakeFiles/cmTC_a1fee.dir/src.c.obj -o cmTC_a1fee   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-x5bca5"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-x5bca5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__nostdlib"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-x5bca5'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_8d418
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__nostdlib  -fuse-ld=bfd -nostdlib -o CMakeFiles/cmTC_8d418.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-x5bca5/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -nostdlib  CMakeFiles/cmTC_8d418.dir/src.c.obj -o cmTC_8d418   && :
+        /usr/bin/ld.bfd: warning: cannot find entry symbol _start; defaulting to 0000000000001000
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-9MubtW"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-9MubtW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__static"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-9MubtW'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_eee17
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__static  -fuse-ld=bfd -static -o CMakeFiles/cmTC_eee17.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-9MubtW/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -static  CMakeFiles/cmTC_eee17.dir/src.c.obj -o cmTC_eee17   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-kzLwch"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-kzLwch"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__znoexecstack"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-kzLwch'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ec9cd
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__znoexecstack  -fuse-ld=bfd -znoexecstack -o CMakeFiles/cmTC_ec9cd.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-kzLwch/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -znoexecstack  CMakeFiles/cmTC_ec9cd.dir/src.c.obj -o cmTC_ec9cd   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-vtotPk"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-vtotPk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl__X"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-vtotPk'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f8873
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl__X  -fuse-ld=bfd -Wl,-X -o CMakeFiles/cmTC_f8873.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-vtotPk/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,-X  CMakeFiles/cmTC_f8873.dir/src.c.obj -o cmTC_f8873   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-MPzpI5"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-MPzpI5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl__N"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-MPzpI5'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4f0f7
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl__N  -fuse-ld=bfd -Wl,-N -o CMakeFiles/cmTC_4f0f7.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-MPzpI5/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,-N  CMakeFiles/cmTC_4f0f7.dir/src.c.obj -o cmTC_4f0f7   && :
+        FAILED: cmTC_4f0f7 
+        : && /usr/bin/gcc -fuse-ld=bfd -Wl,-N  CMakeFiles/cmTC_4f0f7.dir/src.c.obj -o cmTC_4f0f7   && :
+        /usr/bin/ld.bfd: cannot find -lgcc_s: No such file or directory
+        /usr/bin/ld.bfd: cannot find -lgcc_s: No such file or directory
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:18 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-RU0f8n"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-RU0f8n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___orphan_handling_warn"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-RU0f8n'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c2bc9
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___orphan_handling_warn  -fuse-ld=bfd -Wl,--orphan-handling=warn -o CMakeFiles/cmTC_c2bc9.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-RU0f8n/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--orphan-handling=warn  CMakeFiles/cmTC_c2bc9.dir/src.c.obj -o cmTC_c2bc9   && :
+        /usr/bin/ld.bfd: warning: orphan section `.note.gnu.property' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o' being placed in section `.note.gnu.property'
+        /usr/bin/ld.bfd: warning: orphan section `.note.ABI-tag' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o' being placed in section `.note.ABI-tag'
+        /usr/bin/ld.bfd: warning: orphan section `.rela.fini_array' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o' being placed in section `.rela.dyn'
+        /usr/bin/ld.bfd: warning: orphan section `.rela.init_array' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o' being placed in section `.rela.dyn'
+        /usr/bin/ld.bfd: warning: orphan section `.tm_clone_table' from `/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o' being placed in section `.tm_clone_table'
+        /usr/bin/ld.bfd: warning: orphan section `.tm_clone_table' from `/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o' being placed in section `.tm_clone_table'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:22 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-rTbOh9"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-rTbOh9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___orphan_handling_error"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-rTbOh9'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0a205
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___orphan_handling_error  -fuse-ld=bfd -Wl,--orphan-handling=error -o CMakeFiles/cmTC_0a205.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-rTbOh9/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--orphan-handling=error  CMakeFiles/cmTC_0a205.dir/src.c.obj -o cmTC_0a205   && :
+        FAILED: cmTC_0a205 
+        : && /usr/bin/gcc -fuse-ld=bfd -Wl,--orphan-handling=error  CMakeFiles/cmTC_0a205.dir/src.c.obj -o cmTC_0a205   && :
+        /usr/bin/ld.bfd: error: unplaced orphan section `.note.gnu.property' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.note.ABI-tag' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.rela.fini_array' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.rela.init_array' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.tm_clone_table' from `/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.tm_clone_table' from `/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o'
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:28 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Al3uhR"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Al3uhR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___print_memory_usage"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Al3uhR'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3ee46
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___print_memory_usage  -fuse-ld=bfd -Wl,--print-memory-usage -o CMakeFiles/cmTC_3ee46.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Al3uhR/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--print-memory-usage  CMakeFiles/cmTC_3ee46.dir/src.c.obj -o cmTC_3ee46   && :
+        Memory region         Used Size  Region Size  %age Used
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:30 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-7fK6ru"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-7fK6ru"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__fsanitize_undefined"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-7fK6ru'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ac125
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__fsanitize_undefined  -fuse-ld=bfd -fsanitize=undefined -o CMakeFiles/cmTC_ac125.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-7fK6ru/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -fsanitize=undefined  CMakeFiles/cmTC_ac125.dir/src.c.obj -o cmTC_ac125   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:31 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Z8mY0R"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Z8mY0R"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__fsanitize_undefined_trap_on_error"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Z8mY0R'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b6783
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__fsanitize_undefined_trap_on_error  -fuse-ld=bfd -fsanitize-undefined-trap-on-error -o CMakeFiles/cmTC_b6783.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Z8mY0R/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -fsanitize-undefined-trap-on-error  CMakeFiles/cmTC_b6783.dir/src.c.obj -o cmTC_b6783   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:49 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-IBrR1e"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-IBrR1e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___no_relax"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-IBrR1e'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4f737
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___no_relax  -fuse-ld=bfd -Wl,--no-relax -o CMakeFiles/cmTC_4f737.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-IBrR1e/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--no-relax  CMakeFiles/cmTC_4f737.dir/src.c.obj -o cmTC_4f737   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:51 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-1TIoPR"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-1TIoPR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___sort_common_descending"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-1TIoPR'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ab853
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___sort_common_descending  -fuse-ld=bfd -Wl,--sort-common=descending -o CMakeFiles/cmTC_ab853.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-1TIoPR/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--sort-common=descending  CMakeFiles/cmTC_ab853.dir/src.c.obj -o cmTC_ab853   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:51 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-0FKtDf"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-0FKtDf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___sort_section_alignment"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-0FKtDf'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_5710a
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___sort_section_alignment  -fuse-ld=bfd -Wl,--sort-section=alignment -o CMakeFiles/cmTC_5710a.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-0FKtDf/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--sort-section=alignment  CMakeFiles/cmTC_5710a.dir/src.c.obj -o cmTC_5710a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/gcc/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/host-gcc/linker_flags.cmake:2 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/linker/ld/linker_flags.cmake:61 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/cto/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-7OfKJ2"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-7OfKJ2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__pg"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-7OfKJ2'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0b8b2
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__pg  -fuse-ld=bfd -pg -o CMakeFiles/cmTC_0b8b2.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-7OfKJ2/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -pg  CMakeFiles/cmTC_0b8b2.dir/src.c.obj -o cmTC_0b8b2   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2482 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:165 (target_ld_options)"
+      - "/home/cto/zephyrproject/zephyr/CMakeLists.txt:446 (zephyr_ld_options)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-GqiW29"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-GqiW29"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-GqiW29'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_76309
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__fuse_ld_bfd  -fuse-ld=bfd -fuse-ld=bfd -o CMakeFiles/cmTC_76309.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-GqiW29/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -fuse-ld=bfd  CMakeFiles/cmTC_76309.dir/src.c.obj -o cmTC_76309   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "/home/cto/zephyrproject/zephyr/CMakeLists.txt:577 (zephyr_cc_option)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-CjwWCx"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-CjwWCx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_asynchronous_unwind_tables_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-CjwWCx'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_77e9a
+        [1/2] /usr/bin/gcc -Dcheck_fno_asynchronous_unwind_tables_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-asynchronous-unwind-tables -o CMakeFiles/cmTC_77e9a.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-CjwWCx/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_77e9a.dir/src.c.obj -o cmTC_77e9a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "/home/cto/zephyrproject/zephyr/CMakeLists.txt:605 (zephyr_cc_option)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-kbbuUq"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-kbbuUq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_reorder_functions_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-kbbuUq'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_71968
+        [1/2] /usr/bin/gcc -Dcheck_fno_reorder_functions_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-reorder-functions -o CMakeFiles/cmTC_71968.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-kbbuUq/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_71968.dir/src.c.obj -o cmTC_71968   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "/home/cto/zephyrproject/zephyr/CMakeLists.txt:612 (zephyr_cc_option)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-HIi0bg"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-HIi0bg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check__param_min_pagesize_0_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-HIi0bg'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_20891
+        [1/2] /usr/bin/gcc -Dcheck__param_min_pagesize_0_C__fuse_ld_bfd  -fuse-ld=bfd   --param=min-pagesize=0 -o CMakeFiles/cmTC_20891.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-HIi0bg/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_20891.dir/src.c.obj -o cmTC_20891   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "/home/cto/zephyrproject/zephyr/CMakeLists.txt:615 (zephyr_cc_option)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-X8Twgx"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-X8Twgx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_defer_pop_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-X8Twgx'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b44cd
+        [1/2] /usr/bin/gcc -Dcheck_fno_defer_pop_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-defer-pop -o CMakeFiles/cmTC_b44cd.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-X8Twgx/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_b44cd.dir/src.c.obj -o cmTC_b44cd   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "/home/cto/zephyrproject/zephyr/CMakeLists.txt:634 (zephyr_cc_option)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-H0wdyo"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-H0wdyo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map__home_cto_zephyrproject_zephyr_course_tests_ring_buf_CMAKE_SOURCE_DIR_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-H0wdyo'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_993f9
+        [1/2] /usr/bin/gcc -Dcheck_fmacro_prefix_map__home_cto_zephyrproject_zephyr_course_tests_ring_buf_CMAKE_SOURCE_DIR_C__fuse_ld_bfd  -fuse-ld=bfd   -fmacro-prefix-map=/home/cto/zephyrproject/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -o CMakeFiles/cmTC_993f9.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-H0wdyo/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_993f9.dir/src.c.obj -o cmTC_993f9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "/home/cto/zephyrproject/zephyr/CMakeLists.txt:635 (zephyr_cc_option)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-TukUG7"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-TukUG7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map__home_cto_zephyrproject_zephyr_ZEPHYR_BASE_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-TukUG7'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_56d24
+        [1/2] /usr/bin/gcc -Dcheck_fmacro_prefix_map__home_cto_zephyrproject_zephyr_ZEPHYR_BASE_C__fuse_ld_bfd  -fuse-ld=bfd   -fmacro-prefix-map=/home/cto/zephyrproject/zephyr=ZEPHYR_BASE -o CMakeFiles/cmTC_56d24.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-TukUG7/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_56d24.dir/src.c.obj -o cmTC_56d24   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "/home/cto/zephyrproject/zephyr/CMakeLists.txt:637 (zephyr_cc_option)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-iO6HN3"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-iO6HN3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map__home_cto_zephyrproject_WEST_TOPDIR_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-iO6HN3'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0c8ab
+        [1/2] /usr/bin/gcc -Dcheck_fmacro_prefix_map__home_cto_zephyrproject_WEST_TOPDIR_C__fuse_ld_bfd  -fuse-ld=bfd   -fmacro-prefix-map=/home/cto/zephyrproject=WEST_TOPDIR -o CMakeFiles/cmTC_0c8ab.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-iO6HN3/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_0c8ab.dir/src.c.obj -o cmTC_0c8ab   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "/home/cto/zephyrproject/zephyr/arch/common/CMakeLists.txt:43 (zephyr_cc_option)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-IkHaWd"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-IkHaWd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_ffunction_sections_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-IkHaWd'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_af6bd
+        [1/2] /usr/bin/gcc -Dcheck_ffunction_sections_C__fuse_ld_bfd  -fuse-ld=bfd   -ffunction-sections -o CMakeFiles/cmTC_af6bd.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-IkHaWd/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_af6bd.dir/src.c.obj -o cmTC_af6bd   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2460 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2436 (target_cc_option_fallback)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:156 (target_cc_option)"
+      - "/home/cto/zephyrproject/zephyr/arch/common/CMakeLists.txt:43 (zephyr_cc_option)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-8blINR"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-8blINR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fdata_sections_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-8blINR'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1ca18
+        [1/2] /usr/bin/gcc -Dcheck_fdata_sections_C__fuse_ld_bfd  -fuse-ld=bfd   -fdata-sections -o CMakeFiles/cmTC_1ca18.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-8blINR/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_1ca18.dir/src.c.obj -o cmTC_1ca18   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2690 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/arch/posix/x86_64.cmake:21 (check_set_compiler_property)"
+      - "/home/cto/zephyrproject/zephyr/arch/posix/CMakeLists.txt:58 (include)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-p4sazR"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-p4sazR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_msse2__mfpmath_sse_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-p4sazR'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_bb13d
+        [1/2] /usr/bin/gcc -Dcheck_msse2__mfpmath_sse_C__fuse_ld_bfd  -fuse-ld=bfd   -msse2 -mfpmath=sse -o CMakeFiles/cmTC_bb13d.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-p4sazR/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_bb13d.dir/src.c.obj -o cmTC_bb13d   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2421 (check_c_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:1199 (check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:2482 (zephyr_check_compiler_flag)"
+      - "/home/cto/zephyrproject/zephyr/cmake/modules/extensions.cmake:165 (target_ld_options)"
+      - "/home/cto/zephyrproject/zephyr/arch/posix/CMakeLists.txt:76 (zephyr_ld_options)"
+    directories:
+      source: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Wuo6GA"
+      binary: "/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Wuo6GA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/cto/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___unresolved_symbols_ignore_all"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Wuo6GA'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_9855f
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___unresolved_symbols_ignore_all  -fuse-ld=bfd -Wl,--unresolved-symbols=ignore-all -o CMakeFiles/cmTC_9855f.dir/src.c.obj -c /home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/CMakeScratch/TryCompile-Wuo6GA/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--unresolved-symbols=ignore-all  CMakeFiles/cmTC_9855f.dir/src.c.obj -o cmTC_9855f   && :
+        
+      exitCode: 0
+...
