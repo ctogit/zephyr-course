@@ -30,7 +30,7 @@ BOARD:STRING=native_sim/native
 BOARD_DIR:PATH=/home/cto/zephyrproject/zephyr/boards/native/native_sim
 
 //Path to a program.
-BOSSAC:FILEPATH=BOSSAC-NOTFOUND
+BOSSAC:FILEPATH=/home/cto/zephyr-sdk-1.0.0/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/bossac
 
 //Kernel elf file
 BYPRODUCT_KERNEL_ELF_NAME:FILEPATH=/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.elf
@@ -306,7 +306,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 CONF_FILE:STRING=/home/cto/zephyrproject/zephyr-course/tests/ring_buf/prj.conf
 
 //Path to a program.
-DTC:FILEPATH=/usr/bin/dtc
+DTC:FILEPATH=/home/cto/zephyr-sdk-1.0.0/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc
 
 //If desired, you can build the application using the DT configuration
 // settings specified in an alternate .overlay file using this
@@ -343,7 +343,10 @@ MAKE:FILEPATH=/usr/bin/make
 NSI_DIR:PATH=/home/cto/zephyrproject/zephyr/scripts/native_simulator
 
 //Path to a program.
-OPENOCD:FILEPATH=/usr/bin/openocd
+OPENOCD:FILEPATH=/home/cto/zephyr-sdk-1.0.0/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/openocd
+
+//No help, variable specified on the command line.
+OVERLAY_CONFIG:UNINITIALIZED=/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/twister/testsuite_extra.conf
 
 //Path to a program.
 PAHOLE:FILEPATH=PAHOLE-NOTFOUND
@@ -373,7 +376,7 @@ SOC_FULL_DIR:PATH=/home/cto/zephyrproject/zephyr/soc/native/inf_clock
 TC_NAME:UNINITIALIZED=homework.unit.ring_buf
 
 //No help, variable specified on the command line.
-TC_RUNID:UNINITIALIZED=2ae624c1fe863c1947d7bc72fc121f5a
+TC_RUNID:UNINITIALIZED=1dce9706399f3e40515b8919a3815f15
 
 //True if toolchain supports libstdc++
 TOOLCHAIN_HAS_GLIBCXX:BOOL=ON
@@ -404,6 +407,9 @@ Zephyr-Kernel_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Zephyr-Kernel_SOURCE_DIR:STATIC=/home/cto/zephyrproject/zephyr-course/tests/ring_buf
+
+//The directory containing a CMake configuration file for Zephyr-sdk.
+Zephyr-sdk_DIR:PATH=/home/cto/zephyr-sdk-1.0.0/cmake
 
 //The directory containing a CMake configuration file for ZephyrAppConfiguration.
 ZephyrAppConfiguration_DIR:PATH=ZephyrAppConfiguration_DIR-NOTFOUND
@@ -588,7 +594,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Dtc
-FIND_PACKAGE_MESSAGE_DETAILS_Dtc:INTERNAL=[/usr/bin/dtc][v1.7.0(1.4.6)]
+FIND_PACKAGE_MESSAGE_DETAILS_Dtc:INTERNAL=[/home/cto/zephyr-sdk-1.0.0/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc][v1.7.0(1.4.6)]
 //Details about finding GnuLd
 FIND_PACKAGE_MESSAGE_DETAILS_GnuLd:INTERNAL=[/usr/bin/ld.bfd][v2.42()]
 //Details about finding Python3
@@ -603,6 +609,8 @@ SOC_DIRECTORIES:INTERNAL=/home/cto/zephyrproject/zephyr/soc/native/inf_clock
 SOC_LINKER_SCRIPT:INTERNAL=/home/cto/zephyrproject/zephyr/include/zephyr/arch/posix/linker.ld
 //West
 WEST:INTERNAL=/home/cto/zephyrproject/.venv/bin/python3;-m;west
+//Cached environment variable ZEPHYR_SDK_INSTALL_DIR
+ZEPHYR_SDK_INSTALL_DIR:INTERNAL=/home/cto/zephyr-sdk-1.0.0
 ZEPHYR_SHARED_TARGETS:INTERNAL=menuconfig;guiconfig;hardenconfig;traceconfig
 //Compiler reason failure
 _Python3_Compiler_REASON_FAILURE:INTERNAL=

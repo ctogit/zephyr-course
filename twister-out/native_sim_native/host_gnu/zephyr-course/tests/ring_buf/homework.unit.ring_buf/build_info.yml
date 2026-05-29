@@ -40,9 +40,12 @@ cmake:
      - '/home/cto/zephyrproject/zephyr/dts/arc'
      - '/home/cto/zephyrproject/zephyr/dts'
   kconfig:
+    extra-user-files:
+     - '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/twister/testsuite_extra.conf'
     files:
      - '/home/cto/zephyrproject/zephyr/boards/native/native_sim/native_sim_defconfig'
      - '/home/cto/zephyrproject/zephyr-course/tests/ring_buf/prj.conf'
+     - '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/twister/testsuite_extra.conf'
      - '/home/cto/zephyrproject/zephyr-course/twister-out/native_sim_native/host_gnu/zephyr-course/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
     user-files:
      - '/home/cto/zephyrproject/zephyr-course/tests/ring_buf/prj.conf'

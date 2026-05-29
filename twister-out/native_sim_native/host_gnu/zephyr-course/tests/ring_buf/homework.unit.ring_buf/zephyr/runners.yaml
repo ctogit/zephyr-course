@@ -15,8 +15,9 @@ config:
   elf_file: zephyr.elf
   exe_file: zephyr.exe
   # Host tools:
-  openocd: /usr/bin/openocd
+  openocd: /home/cto/zephyr-sdk-1.0.0/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/openocd
   openocd_search:
+    - /home/cto/zephyr-sdk-1.0.0/hosttools/sysroots/x86_64-pokysdk-linux/usr/share/openocd/scripts
 
 # Runner specific arguments
 args:
